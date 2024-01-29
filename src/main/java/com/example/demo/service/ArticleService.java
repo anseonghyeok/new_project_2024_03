@@ -29,6 +29,14 @@ public class ArticleService {
 	}
 
 	public void modifyArticle(int id, String title, String body) {
+
+		if (title == null) {
+			title = "null";
+		}
+		if (body == null) {
+			body = "null";
+		}
+
 		articleRepository.modifyArticle(id, title, body);
 	}
 
