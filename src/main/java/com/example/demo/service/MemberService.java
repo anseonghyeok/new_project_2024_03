@@ -46,12 +46,5 @@ public class MemberService {
 	public Member getMember(int id) {
 		return memberRepository.getMember(id);
 	}
-	
-	public Member login(String loginId, String loginPw) {
-
-		return memberRepository.login(loginId, loginPw);
-	}
-	
-	
 
 }
