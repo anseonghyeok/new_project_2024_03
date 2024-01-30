@@ -38,7 +38,7 @@ public class UsrArticleController {
 	@ResponseBody
 	public Object doModify(int id, String title, String body) {
 		System.err.println("title : " + title);
-		System.err.println("body : " + body);
+		System.err.println("body S: " + body);
 		Article article = articleService.getArticle(id);
 
 		if (article == null) {
