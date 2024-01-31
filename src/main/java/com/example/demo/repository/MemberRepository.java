@@ -5,7 +5,6 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
 import com.example.demo.vo.Member;
-import com.example.demo.vo.ResultData;
 
 @Mapper
 public interface MemberRepository {
@@ -19,7 +18,7 @@ public interface MemberRepository {
 	@Select("""
 			SELECT *
 			FROM `member`
-			WHERE name = #{name} 
+			WHERE name = #{name}
 			AND email = #{email}
 			""")
 	public Member getMemberByNameAndEmail(String name, String email);
@@ -43,15 +42,5 @@ public interface MemberRepository {
 
 	@Select("SELECT * FROM `member` WHERE id = #{id}")
 	public Member getMember(int id);
-
-	
-	@Select("SELECT * FROM `member` WHERE loginPw = #{loginPw}")
-	public Member getMemberByLoginPw(String loginPw);
-
-	
-	@Select("""
-			SELECT * FROM `member` WHERE loginId = #{loginId} AND loginPw = #{loginPw}
-			""")
-	public Member login(String loginId, String loginPw);
 
 }
