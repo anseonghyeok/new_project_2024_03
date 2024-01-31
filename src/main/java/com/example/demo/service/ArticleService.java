@@ -21,8 +21,8 @@ public class ArticleService {
 	}
 
 	// 서비스 메서드
-	public ResultData<Integer> writeArticle(String title, String body ,int memberId) {
-		articleRepository.writeArticle(title, body,memberId);
+	public ResultData<Integer> writeArticle(int memberId, String title, String body) {
+		articleRepository.writeArticle(memberId, title, body);
 
 		int id = articleRepository.getLastInsertId();
 
