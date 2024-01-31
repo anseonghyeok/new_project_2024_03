@@ -52,4 +52,31 @@ public class MemberService {
 		return memberRepository.getMember(id);
 	}
 
+	public ResultData<Integer> doLogin(String loginId, String loginPw) {
+
+		Member existsMember = getMemberByLoginId(loginId);
+
+		if (existsMember == null) {
+			return ResultData.from("F-3", Ut.f("없는 아이디(%s)입니다", loginId));
+		}
+
+		existsMember = getMemberByLoginPw(loginPw);
+
+		if (existsMember == null) {
+			return ResultData.from("F-4", Ut.f("없는 비밀번호(%s)입니다", loginPw));
+		}
+
+		memberRepository.login(loginId, loginPw);
+
+		existsMember = memberRepository.login(loginId, loginPw);
+		int id = existsMember.getId();
+
+		return ResultData.from("S-1", Ut.f("로그인 성공", id));
+
+	}
+
+	private Member getMemberByLoginPw(String loginPw) {
+		return memberRepository.getMemberByLoginPw(loginPw);
+	}
+
 }
