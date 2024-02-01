@@ -25,6 +25,10 @@
 				<li><a class="hover:underline" href="/">HOME</a></li>
 				<li><a class="hover:underline" href="../article/list">LIST</a></li>
 				<li><a class="hover:underline" href="../member/login">LOGIN</a></li>
+				<li><a class="hover:underline" onclick="alert('로그아웃 성공')" href="../member/doLogout">LOGOUT</a></li>
+
+				<button type="button" onclick="alert('onclick에 alert를 쓰면 이런식으로 경고창이 뜬다.')">
+
 			</ul>
 		</div>
 	</header>

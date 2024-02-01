@@ -1,42 +1,30 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>ARTICLE</title>
-</head>
-<body>
-	<h1>Detail</h1>
+<c:set var="pageTitle" value="Modify"></c:set>
+<%@ include file="../common/head.jspf"%>
 
-	<hr />
+<h2>게시물 수정</h2>
 
-	<table border="1">
-		<thead>
-			<tr>
-				<th>번호</th>
-				<th>날짜</th>
-				<th>제목</th>
-				<th>작성자</th>
-			</tr>
-		</thead>
-		<tbody>
+<h3>번 게시물 수정</h3>
+<div>번호 : ${article.id}</div>
+<div>날짜 : ${article.regDate} </div>
+<form method="POST" action="doModify">
+	<input type="hidden" value="${id}" name="id" />
+	<div>
+		제목 : <input type="text" name="title" value="" >
+	</div>
+	<div>
+		내용 :
+		<textarea type="text" name="body"></textarea>
+	</div>
+	<button type="submit">수정</button>
+</form>
 
-			<c var="article" items="${article}">
-			<tr>
-				<td>${article.id }</td>
-				<td>${article.regDate.substring(0,10) }</td>
-				<td>${article.title }</td>
-				<td>${article.memberId }</td>
-			</tr>
-			</c>
-		</tbody>
 
-	</table>
+<div>
+	<a style="color: green" href="list">리스트로 돌아가기</a>
+</div>
 
 
 
-
-
-</body>
-</html>
+<%@ include file="../common/foot.jspf"%>

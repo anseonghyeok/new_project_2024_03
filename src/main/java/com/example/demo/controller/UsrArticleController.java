@@ -28,18 +28,33 @@ public class UsrArticleController {
 	// 액션 메서드
 
 	@RequestMapping("/usr/article/list")
-	public String showList(Model model) {
+	public String showList(HttpSession httpSession, Model model) {
 		List<Article> articles = articleService.getArticles();
 
-		model.addAttribute("articles", articles);
+		boolean isLogined = false;
+		int loginedMemberId = 0;
 
+		if (httpSession.getAttribute("loginedMemberId") != null) {
+			isLogined = true;
+			loginedMemberId = (int) httpSession.getAttribute("loginedMemberId");
+		}
+
+		model.addAttribute("articles", articles);
+		model.addAttribute("isLogined", isLogined);
 		return "usr/article/list";
 	}
 
 	@RequestMapping("/usr/article/detail")
-	public String showDetail(Model model, int id) {
+	public String showDetail(HttpSession httpSession, Model model, int id) {
+		boolean isLogined = false;
+		int loginedMemberId = 0;
 
-		Article article = articleService.getArticle(id);
+		if (httpSession.getAttribute("loginedMemberId") != null) {
+			isLogined = true;
+			loginedMemberId = (int) httpSession.getAttribute("loginedMemberId");
+		}
+
+		Article article = articleService.getForPrintArticle(loginedMemberId, id);
 
 		model.addAttribute("article", article);
 
@@ -78,6 +93,27 @@ public class UsrArticleController {
 		return ResultData.newData(writeArticleRd, "article", article);
 	}
 
+	@RequestMapping("/usr/article/Modify")
+	public String Modify(Model model, HttpSession httpSession, int id) {
+
+		boolean isLogined = false;
+		int loginedMemberId = 0;
+		if (httpSession.getAttribute("loginedMemberId") != null) {
+			isLogined = true;
+			loginedMemberId = (int) httpSession.getAttribute("loginedMemberId");
+		}
+
+		if (isLogined == false) {
+			return "로그인후 입력하세요";
+		}
+		Article article = articleService.getArticle(id);
+
+		model.addAttribute("id", id);
+		model.addAttribute("article", article);
+
+		return "usr/article/modify";
+	}
+
 	// 로그인 체크 -> 유무 체크 -> 권한 체크 -> 수정
 	@RequestMapping("/usr/article/doModify")
 
@@ -95,13 +131,12 @@ public class UsrArticleController {
 
 		articleService.modifyArticle(id, title, body);
 
-		return "usr/article/modify";
+		return id + "번 수정이 완료되었습니다";
 	}
 
 	// 로그인 체크 -> 유무 체크 -> 권한 체크 -> 삭제
 	@RequestMapping("/usr/article/doDelete")
 	public String doDelete(Model model, HttpSession httpSession, int id) {
-
 		boolean isLogined = false;
 		int loginedMemberId = 0;
 
@@ -112,7 +147,7 @@ public class UsrArticleController {
 
 		articleService.deleteArticle(id);
 
-		return "삭제를 완료했습니다";
-	}
+		return "삭제 완료 되었습니다";
 
+	}
 }

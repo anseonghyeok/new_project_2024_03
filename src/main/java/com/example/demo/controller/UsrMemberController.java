@@ -2,11 +2,13 @@ package com.example.demo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.example.demo.service.MemberService;
 import com.example.demo.util.Ut;
+import com.example.demo.vo.Article;
 import com.example.demo.vo.Member;
 import com.example.demo.vo.ResultData;
 
@@ -35,6 +37,29 @@ public class UsrMemberController {
 		httpSession.removeAttribute("loginedMemberId");
 
 		return ResultData.from("S-1", Ut.f("로그아웃 되었습니다"));
+	}
+
+	public ResultData userCanModify(int loginedMemberId, Article article) {
+
+		if (article.getMemberId() != loginedMemberId) {
+			return ResultData.from("F-2", Ut.f("%d번 글에 대한 권한이 없습니다", article.getId()));
+		}
+
+		return ResultData.from("S-1", Ut.f("%d번 글을 수정했습니다", article.getId()));
+	}
+
+	@RequestMapping("/usr/member/login")
+	public String login(HttpSession httpSession, Model model) {
+		boolean isLogined = false;
+		int loginedMemberId = 0;
+
+		if (httpSession.getAttribute("loginedMemberId") != null) {
+			isLogined = true;
+			loginedMemberId = (int) httpSession.getAttribute("loginedMemberId");
+		}
+
+		model.addAttribute("isLogined", isLogined);
+		return "usr/member/login";
 	}
 
 	@RequestMapping("/usr/member/doLogin")
