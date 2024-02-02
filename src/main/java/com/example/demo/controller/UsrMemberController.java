@@ -96,6 +96,12 @@ public class UsrMemberController {
 
 	}
 
+	@RequestMapping("/usr/member/Join")
+	public String Join() {
+
+		return "usr/member/join";
+	}
+
 	@RequestMapping("/usr/member/doJoin")
 	@ResponseBody
 	public ResultData<Member> doJoin(HttpSession httpSession, String loginId, String loginPw, String name,

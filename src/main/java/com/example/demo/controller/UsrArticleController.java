@@ -39,8 +39,6 @@ public class UsrArticleController {
 		return "usr/article/detail";
 	}
 
-
-
 	@RequestMapping("/usr/article/list")
 	public String showList(Model model) {
 		List<Article> articles = articleService.getArticles();
@@ -79,17 +77,17 @@ public class UsrArticleController {
 	// 로그인 체크 -> 유무 체크 -> 권한 체크 -> 수정
 	@RequestMapping("/usr/article/doModify")
 	@ResponseBody
-	public ResultData<Integer> doModify(HttpServletRequest req, int id, String title, String body) {
+	public String doModify(HttpServletRequest req, int id, String title, String body) {
 		Rq rq = (Rq) req.getAttribute("rq");
 
 		if (rq.isLogined() == false) {
-			return ResultData.from("F-A", "로그인 후 이용해주세요");
+			return Ut.jsHistoryBack("F-A", Ut.f("로그인후 이용해주세요"));
 		}
 
 		Article article = articleService.getArticle(id);
 
 		if (article == null) {
-			return ResultData.from("F-1", Ut.f("%d번 글은 존재하지 않습니다", id), "id", id);
+			return Ut.jsHistoryBack("F-1", Ut.f("%d번 글은 존재하지 않습니다", id));
 		}
 
 		ResultData loginedMemberCanModifyRd = articleService.userCanModify(rq.getLoginedMemberId(), article);
@@ -98,7 +96,20 @@ public class UsrArticleController {
 			articleService.modifyArticle(id, title, body);
 		}
 
-		return ResultData.from(loginedMemberCanModifyRd.getResultCode(), loginedMemberCanModifyRd.getMsg(), "id", id);
+		return Ut.jsReplace(loginedMemberCanModifyRd.getResultCode(), loginedMemberCanModifyRd.getMsg(),
+				"../article/list");
+	}
+
+	// 로그인 체크 -> 유무 체크 -> 권한 체크 -> 수정
+	@RequestMapping("/usr/article/modify")
+
+	public String Modify(Model model, int id) {
+
+		Article article = articleService.getArticle(id);
+		model.addAttribute("id", id);
+		model.addAttribute("article", article);
+		return "usr/article/modify";
+
 	}
 
 	// 로그인 체크 -> 유무 체크 -> 권한 체크 -> 삭제
