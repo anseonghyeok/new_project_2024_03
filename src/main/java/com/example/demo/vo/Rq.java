@@ -37,7 +37,8 @@ public class Rq {
 			System.err.println("alert('" + msg + "');");
 			println("alert('" + msg + "');");
 		}
-		println("history.back();");
+		println("history.back();"); 
+		
 		println("</script>");
 	}
 

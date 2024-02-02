@@ -11,8 +11,10 @@ import com.example.demo.util.Ut;
 import com.example.demo.vo.Article;
 import com.example.demo.vo.Member;
 import com.example.demo.vo.ResultData;
+import com.example.demo.vo.Rq;
 
 import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
 @Controller
@@ -23,7 +25,9 @@ public class UsrMemberController {
 
 	@RequestMapping("/usr/member/doLogout")
 	@ResponseBody
-	public ResultData doLogout(HttpSession httpSession) {
+	public String doLogout(HttpServletResponse resp, HttpServletRequest req, HttpSession httpSession) {
+
+		Rq rq = (Rq) req.getAttribute("rq");
 
 		boolean isLogined = false;
 
@@ -31,13 +35,13 @@ public class UsrMemberController {
 			isLogined = true;
 		}
 
-		if (isLogined == false) {
-			return ResultData.from("F-A", "이미 로그아웃 상태입니다");
+		if (!rq.isLogined()) {
+			return Ut.jsReplace("F-A", Ut.f("이미 로그아웃 상태입니다"), "../home/main");
 		}
 
 		httpSession.removeAttribute("loginedMemberId");
 
-		return ResultData.from("S-1", Ut.f("로그아웃 되었습니다"));
+		return Ut.jsReplace("S-1", Ut.f("로그아웃에 성공하였습니다"), "../home/main");
 	}
 
 	public ResultData userCanModify(int loginedMemberId, Article article) {
@@ -65,44 +69,31 @@ public class UsrMemberController {
 
 	@RequestMapping("/usr/member/doLogin")
 	@ResponseBody
-	public ResultData<Member> doLogin(HttpSession httpSession,HttpServletRequest request, String loginId, String loginPw) {
-
-		boolean isLogined = false;
-
-		if (httpSession.getAttribute("loginedMemberId") != null) {
-			isLogined = true;
-		}
-
-		if (isLogined) {
-			return ResultData.from("F-A", "이미 로그인 상태입니다");
-		}
+	public String doLogin(HttpSession httpSession, HttpServletRequest request, String loginId, String loginPw) {
 
 		if (Ut.isNullOrEmpty(loginId)) {
-			return ResultData.from("F-1", "아이디를 입력해주세요");
+			return Ut.jsReplace("F-1", Ut.f("아이디를 입력해주세요"), "../member/login");
+
 		}
 		if (Ut.isNullOrEmpty(loginPw)) {
-			return ResultData.from("F-2", "비밀번호를 입력해주세요");
+			return Ut.jsReplace("F-2", Ut.f("비밀번호를 입력해주세요"), "../member/login");
+
 		}
 
 		Member member = memberService.getMemberByLoginId(loginId);
 
 		if (member == null) {
-			return ResultData.from("F-3", Ut.f("%s(은)는 존재하지 않는 아이디입니다", loginId));
+			return Ut.jsReplace("F-3", Ut.f("존재하지 않는아이디(%s) 입니다", loginId), "../member/login");
 		}
 
 		if (member.getLoginPw().equals(loginPw) == false) {
-			return ResultData.from("F-4", Ut.f("비밀번호가 일치하지 않습니다"));
+			return Ut.jsReplace("F-4", Ut.f("비밀번호가 일치하지 않습니다"), "../member/login");
 		}
 
-		  if (member != null) {
-	            HttpSession session = request.getSession();
-	            session.setAttribute("loginMember", member);
-	            session.setMaxInactiveInterval(60 * 30);
-	        }
-	        
-	출처: https://congsong.tistory.com/38 [Let's develop:티스토리]
+		httpSession.setAttribute("loginedMemberId", member.getId());
 
-		return ResultData.from("S-1", Ut.f("%s님 환영합니다", member.getNickname()));
+		return Ut.jsReplace("S-1", Ut.f("%s님 로그인을 환영합니다", member.getName()), "../home/main");
+
 	}
 
 	@RequestMapping("/usr/member/doJoin")

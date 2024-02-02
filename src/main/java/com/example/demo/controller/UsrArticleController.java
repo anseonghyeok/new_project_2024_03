@@ -23,8 +23,8 @@ public class UsrArticleController {
 	private ArticleService articleService;
 
 	public UsrArticleController() {
-
-	}
+		;
+	};
 
 	// 액션 메서드
 
@@ -38,6 +38,8 @@ public class UsrArticleController {
 
 		return "usr/article/detail";
 	}
+
+
 
 	@RequestMapping("/usr/article/list")
 	public String showList(Model model) {
