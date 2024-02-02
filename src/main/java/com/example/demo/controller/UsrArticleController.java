@@ -15,7 +15,6 @@ import com.example.demo.vo.ResultData;
 import com.example.demo.vo.Rq;
 
 import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpSession;
 
 @Controller
 public class UsrArticleController {
@@ -27,38 +26,26 @@ public class UsrArticleController {
 
 	}
 
-	@RequestMapping("/usr/article/list")
-	public String showList(HttpSession httpSession, Model model) {
-		List<Article> articles = articleService.getArticles();
-
-		boolean isLogined = false;
-		int loginedMemberId = 0;
-
-		if (httpSession.getAttribute("loginedMemberId") != null) {
-			isLogined = true;
-			loginedMemberId = (int) httpSession.getAttribute("loginedMemberId");
-		}
-
-		model.addAttribute("articles", articles);
-		model.addAttribute("isLogined", isLogined);
-		return "usr/article/list";
-	}
+	// 액션 메서드
 
 	@RequestMapping("/usr/article/detail")
-	public String showDetail(HttpSession httpSession, Model model, int id) {
-		boolean isLogined = false;
-		int loginedMemberId = 0;
+	public String showDetail(HttpServletRequest req, Model model, int id) {
+		Rq rq = new Rq(req);
 
-		if (httpSession.getAttribute("loginedMemberId") != null) {
-			isLogined = true;
-			loginedMemberId = (int) httpSession.getAttribute("loginedMemberId");
-		}
-
-		Article article = articleService.getForPrintArticle(loginedMemberId, id);
+		Article article = articleService.getForPrintArticle(rq.getLoginedMemberId(), id);
 
 		model.addAttribute("article", article);
 
 		return "usr/article/detail";
+	}
+
+	@RequestMapping("/usr/article/list")
+	public String showList(Model model) {
+		List<Article> articles = articleService.getArticles();
+
+		model.addAttribute("articles", articles);
+
+		return "usr/article/list";
 	}
 
 	@RequestMapping("/usr/article/doWrite")
@@ -85,27 +72,6 @@ public class UsrArticleController {
 		Article article = articleService.getArticle(id);
 
 		return ResultData.newData(writeArticleRd, "article", article);
-	}
-
-	@RequestMapping("/usr/article/Modify")
-	public String Modify(Model model, HttpSession httpSession, int id) {
-
-		boolean isLogined = false;
-		int loginedMemberId = 0;
-		if (httpSession.getAttribute("loginedMemberId") != null) {
-			isLogined = true;
-			loginedMemberId = (int) httpSession.getAttribute("loginedMemberId");
-		}
-
-		if (isLogined == false) {
-			return "로그인후 입력하세요";
-		}
-		Article article = articleService.getArticle(id);
-
-		model.addAttribute("id", id);
-		model.addAttribute("article", article);
-
-		return "usr/article/modify";
 	}
 
 	// 로그인 체크 -> 유무 체크 -> 권한 체크 -> 수정
