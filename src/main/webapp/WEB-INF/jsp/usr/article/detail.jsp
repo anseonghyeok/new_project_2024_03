@@ -38,10 +38,16 @@
 			<button class="hover:underline" type="button" onclick="history.back();">뒤로가기</button>
 			<c:if test="${article.userCanModify }">
 				<a href="../article/modify?id=${article.id }">수정</a>
+
 			</c:if>
-			<a href="../article/doDelete?id=${article.id }">삭제</a>
+
+			<c:if test="${article.userCanDelete}">
+				<a href="../article/doDelete?id=${article.id }">삭제</a>
+
+			</c:if>
+
 		</div>
-		</div>
+	</div>
 	</div>
 </section>
 

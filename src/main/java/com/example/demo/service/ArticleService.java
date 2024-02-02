@@ -58,7 +58,9 @@ public class ArticleService {
 			return;
 		}
 		ResultData userCanModifyRd = userCanModify(loginedMemberId, article);
+		ResultData userCanDeleteRd = userCanDelete(loginedMemberId, article);
 		article.setUserCanModify(userCanModifyRd.isSuccess());
+		article.setUserCanDelete(userCanDeleteRd.isSuccess());
 	}
 
 	public ResultData userCanModify(int loginedMemberId, Article article) {
@@ -69,5 +71,15 @@ public class ArticleService {
 
 		return ResultData.from("S-1", Ut.f("%d번 글을 수정했습니다", article.getId()));
 	}
+	
+	public ResultData userCanDelete(int loginedMemberId, Article article) {
+
+		if (article.getMemberId() != loginedMemberId) {
+			return ResultData.from("F-2", Ut.f("%d번 글에 대한 권한이 없습니다", article.getId()));
+		}
+
+		return ResultData.from("S-1", Ut.f("%d번 글을 삭제했습니다", article.getId()));
+	}
+
 
 }

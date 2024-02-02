@@ -127,9 +127,12 @@ public class UsrArticleController {
 			loginedMemberId = (int) httpSession.getAttribute("loginedMemberId");
 		}
 
-		ResultData loginedMemberCanModifyRd = articleService.loginedMemberCanModify(loginedMemberId, article);
+		Article article = articleService.getArticle(id);
+		ResultData userCanModfiyRd = articleService.userCanModify(loginedMemberId, article);
 
-		articleService.modifyArticle(id, title, body);
+		if (userCanModfiyRd.isSuccess()) {
+			articleService.modifyArticle(id, title, body);
+		}
 
 		return id + "번 수정이 완료되었습니다";
 	}
@@ -144,8 +147,12 @@ public class UsrArticleController {
 			isLogined = true;
 			loginedMemberId = (int) httpSession.getAttribute("loginedMemberId");
 		}
+		Article article = articleService.getArticle(id);
+		ResultData userCanDeleteRd = articleService.userCanDelete(loginedMemberId, article);
 
-		articleService.deleteArticle(id);
+		if (userCanDeleteRd.isSuccess()) {
+			articleService.deleteArticle(id);
+		}
 
 		return "삭제 완료 되었습니다";
 
