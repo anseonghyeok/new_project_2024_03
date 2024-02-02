@@ -12,7 +12,9 @@ import com.example.demo.service.ArticleService;
 import com.example.demo.util.Ut;
 import com.example.demo.vo.Article;
 import com.example.demo.vo.ResultData;
+import com.example.demo.vo.Rq;
 
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 
 @Controller
@@ -24,8 +26,6 @@ public class UsrArticleController {
 	public UsrArticleController() {
 
 	}
-
-	// 액션 메서드
 
 	@RequestMapping("/usr/article/list")
 	public String showList(HttpSession httpSession, Model model) {
@@ -63,17 +63,11 @@ public class UsrArticleController {
 
 	@RequestMapping("/usr/article/doWrite")
 	@ResponseBody
-	public ResultData<Article> doWrite(HttpSession httpSession, String title, String body) {
+	public ResultData<Article> doWrite(HttpServletRequest req, String title, String body) {
 
-		boolean isLogined = false;
-		int loginedMemberId = 0;
+		Rq rq = new Rq(req);
 
-		if (httpSession.getAttribute("loginedMemberId") != null) {
-			isLogined = true;
-			loginedMemberId = (int) httpSession.getAttribute("loginedMemberId");
-		}
-
-		if (isLogined == false) {
+		if (rq.isLogined() == false) {
 			return ResultData.from("F-A", "로그인 후 이용해주세요");
 		}
 
@@ -84,7 +78,7 @@ public class UsrArticleController {
 			return ResultData.from("F-2", "내용을 입력해주세요");
 		}
 
-		ResultData<Integer> writeArticleRd = articleService.writeArticle(loginedMemberId, title, body);
+		ResultData<Integer> writeArticleRd = articleService.writeArticle(rq.getLoginedMemberId(), title, body);
 
 		int id = (int) writeArticleRd.getData1();
 
@@ -116,45 +110,52 @@ public class UsrArticleController {
 
 	// 로그인 체크 -> 유무 체크 -> 권한 체크 -> 수정
 	@RequestMapping("/usr/article/doModify")
+	@ResponseBody
+	public ResultData<Integer> doModify(HttpServletRequest req, int id, String title, String body) {
+		Rq rq = new Rq(req);
 
-	public String doModify(Model model, HttpSession httpSession, int id, String title, String body) {
-
-		boolean isLogined = false;
-		int loginedMemberId = 0;
-
-		if (httpSession.getAttribute("loginedMemberId") != null) {
-			isLogined = true;
-			loginedMemberId = (int) httpSession.getAttribute("loginedMemberId");
+		if (rq.isLogined() == false) {
+			return ResultData.from("F-A", "로그인 후 이용해주세요");
 		}
 
 		Article article = articleService.getArticle(id);
-		ResultData userCanModfiyRd = articleService.userCanModify(loginedMemberId, article);
 
-		if (userCanModfiyRd.isSuccess()) {
+		if (article == null) {
+			return ResultData.from("F-1", Ut.f("%d번 글은 존재하지 않습니다", id), "id", id);
+		}
+
+		ResultData loginedMemberCanModifyRd = articleService.userCanModify(rq.getLoginedMemberId(), article);
+
+		if (loginedMemberCanModifyRd.isSuccess()) {
 			articleService.modifyArticle(id, title, body);
 		}
 
-		return id + "번 수정이 완료되었습니다";
+		return ResultData.from(loginedMemberCanModifyRd.getResultCode(), loginedMemberCanModifyRd.getMsg(), "id", id);
 	}
 
 	// 로그인 체크 -> 유무 체크 -> 권한 체크 -> 삭제
 	@RequestMapping("/usr/article/doDelete")
-	public String doDelete(Model model, HttpSession httpSession, int id) {
-		boolean isLogined = false;
-		int loginedMemberId = 0;
+	@ResponseBody
+	public String doDelete(HttpServletRequest req, int id) {
+		Rq rq = new Rq(req);
 
-		if (httpSession.getAttribute("loginedMemberId") != null) {
-			isLogined = true;
-			loginedMemberId = (int) httpSession.getAttribute("loginedMemberId");
+		if (rq.isLogined() == false) {
+			return Ut.jsReplace("F-A", "로그인 후 이용해주세요", "../member/login");
 		}
 		Article article = articleService.getArticle(id);
-		ResultData userCanDeleteRd = articleService.userCanDelete(loginedMemberId, article);
 
-		if (userCanDeleteRd.isSuccess()) {
+		if (article == null) {
+			return Ut.jsHistoryBack("F-1", Ut.f("%d번 글은 존재하지 않습니다", id));
+		}
+
+		ResultData loginedMemberCanDeleteRd = articleService.userCanDelete(rq.getLoginedMemberId(), article);
+
+		if (loginedMemberCanDeleteRd.isSuccess()) {
 			articleService.deleteArticle(id);
 		}
 
-		return "삭제 완료 되었습니다";
-
+		return Ut.jsReplace(loginedMemberCanDeleteRd.getResultCode(), loginedMemberCanDeleteRd.getMsg(),
+				"../article/list");
 	}
+
 }

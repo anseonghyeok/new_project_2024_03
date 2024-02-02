@@ -12,6 +12,7 @@ import com.example.demo.vo.Article;
 import com.example.demo.vo.Member;
 import com.example.demo.vo.ResultData;
 
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 
 @Controller
@@ -64,7 +65,7 @@ public class UsrMemberController {
 
 	@RequestMapping("/usr/member/doLogin")
 	@ResponseBody
-	public ResultData<Member> doLogin(HttpSession httpSession, String loginId, String loginPw) {
+	public ResultData<Member> doLogin(HttpSession httpSession,HttpServletRequest request, String loginId, String loginPw) {
 
 		boolean isLogined = false;
 
@@ -93,7 +94,13 @@ public class UsrMemberController {
 			return ResultData.from("F-4", Ut.f("비밀번호가 일치하지 않습니다"));
 		}
 
-		httpSession.setAttribute("loginedMemberId", member.getId());
+		  if (member != null) {
+	            HttpSession session = request.getSession();
+	            session.setAttribute("loginMember", member);
+	            session.setMaxInactiveInterval(60 * 30);
+	        }
+	        
+	출처: https://congsong.tistory.com/38 [Let's develop:티스토리]
 
 		return ResultData.from("S-1", Ut.f("%s님 환영합니다", member.getNickname()));
 	}
