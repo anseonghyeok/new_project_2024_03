@@ -69,30 +69,37 @@
 
 <form method="POST" action="doLogin" onsubmit="LoginForm__submit(this); return false;">
 	<div>
-		아이디 : <input autocomplete="off" type="text" placeholder="아이디를 입력해주세요" name="loginId" required />
+		아이디 : <input class="input input-bordered input-primary   " autocomplete="off" type="text" placeholder="아이디를 입력해주세요"
+			name="loginId" required />
 	</div>
 	<div>
-		비밀번호 : <input autocomplete="off" type="text" placeholder="비밀번호를 입력해주세요" name="loginPw" required />
+		비밀번호 : <input class="input input-bordered input-primary   " autocomplete="off" type="text" placeholder="비밀번호를 입력해주세요"
+			name="loginPw" required />
 	</div>
 	<div>
-		비밀번호 중복체크 : <input autocomplete="off" type="text" placeholder="비밀번호를 입력해주세요" name="loginPw2" required />
+		비밀번호 중복체크 : <input class="input input-bordered input-primary  " autocomplete="off" type="text"
+			placeholder="비밀번호를 입력해주세요" name="loginPw2" required />
 	</div>
 	<div>
-		이름 : <input autocomplete="off" type="text" placeholder="이름 입력해주세요" name="name" required />
+		이름 : <input class="input input-bordered input-primary " autocomplete="off" type="text" placeholder="이름 입력해주세요"
+			name="name" required />
 	</div>
 	<div>
-		닉네임 : <input autocomplete="off" type="text" placeholder="닉네임을 입력해주세요" name="nickname" required />
+		닉네임 : <input class="input input-bordered input-primary " autocomplete="off" type="text" placeholder="닉네임을 입력해주세요"
+			name="nickname" required />
 	</div>
 	<div>
-		휴대폰번호 : <input autocomplete="off" type="text" placeholder="번호를 입력해주세요" name="cellphoneNum" required />
+		휴대폰번호 : <input class="input input-bordered input-primary" autocomplete="off" type="text" placeholder="번호를 입력해주세요"
+			name="cellphoneNum" required />
 	</div>
 	<div>
-		이메일 : <input autocomplete="off" type="text" placeholder="이메일을 입력해주세요" name="email" required />
+		이메일 : <input class="input input-bordered input-primary " autocomplete="off" type="text" placeholder="이메일을 입력해주세요"
+			name="email" required />
 	</div>
 
 
 
-	<button type="submit">로그인</button>
+	<button class="btn btn-outline btn-info" type="submit">회원가입</button>
 </form>
 
 
