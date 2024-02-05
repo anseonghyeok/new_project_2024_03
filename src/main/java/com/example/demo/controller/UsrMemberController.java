@@ -2,19 +2,16 @@ package com.example.demo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.example.demo.service.MemberService;
 import com.example.demo.util.Ut;
-import com.example.demo.vo.Article;
 import com.example.demo.vo.Member;
 import com.example.demo.vo.ResultData;
 import com.example.demo.vo.Rq;
 
 import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
 @Controller
@@ -25,94 +22,62 @@ public class UsrMemberController {
 
 	@RequestMapping("/usr/member/doLogout")
 	@ResponseBody
-	public String doLogout(HttpServletResponse resp, HttpServletRequest req, HttpSession httpSession) {
-
+	public String doLogout(HttpServletRequest req) {
 		Rq rq = (Rq) req.getAttribute("rq");
 
-		boolean isLogined = false;
+//		if (!rq.isLogined()) {
+//			return Ut.jsHistoryBack("F-A", "이미 로그아웃 상태입니다");
+//		}
 
-		if (httpSession.getAttribute("loginedMemberId") != null) {
-			isLogined = true;
-		}
+		rq.logout();
 
-		if (!rq.isLogined()) {
-			return Ut.jsReplace("F-A", Ut.f("이미 로그아웃 상태입니다"), "../home/main");
-		}
-
-		httpSession.removeAttribute("loginedMemberId");
-
-		return Ut.jsReplace("S-1", Ut.f("로그아웃에 성공하였습니다"), "../home/main");
-	}
-
-	public ResultData userCanModify(int loginedMemberId, Article article) {
-
-		if (article.getMemberId() != loginedMemberId) {
-			return ResultData.from("F-2", Ut.f("%d번 글에 대한 권한이 없습니다", article.getId()));
-		}
-
-		return ResultData.from("S-1", Ut.f("%d번 글을 수정했습니다", article.getId()));
+		return Ut.jsReplace("S-1", "로그아웃 되었습니다", "/");
 	}
 
 	@RequestMapping("/usr/member/login")
-	public String login(HttpSession httpSession, Model model) {
-		boolean isLogined = false;
-		int loginedMemberId = 0;
+	public String showLogin(HttpSession httpSession) {
 
-		if (httpSession.getAttribute("loginedMemberId") != null) {
-			isLogined = true;
-			loginedMemberId = (int) httpSession.getAttribute("loginedMemberId");
-		}
-
-		model.addAttribute("isLogined", isLogined);
 		return "usr/member/login";
 	}
 
 	@RequestMapping("/usr/member/doLogin")
 	@ResponseBody
-	public String doLogin(HttpSession httpSession, HttpServletRequest request, String loginId, String loginPw) {
+	public String doLogin(HttpServletRequest req, String loginId, String loginPw) {
+
+		Rq rq = (Rq) req.getAttribute("rq");
+
+		if (rq.isLogined()) {
+			return Ut.jsHistoryBack("F-A", "이미 로그인 함");
+		}
 
 		if (Ut.isNullOrEmpty(loginId)) {
-			return Ut.jsReplace("F-1", Ut.f("아이디를 입력해주세요"), "../member/login");
-
+			return Ut.jsHistoryBack("F-1", "아이디를 입력해주세요");
 		}
 		if (Ut.isNullOrEmpty(loginPw)) {
-			return Ut.jsReplace("F-2", Ut.f("비밀번호를 입력해주세요"), "../member/login");
-
+			return Ut.jsHistoryBack("F-2", "비밀번호를 입력해주세요");
 		}
 
 		Member member = memberService.getMemberByLoginId(loginId);
 
 		if (member == null) {
-			return Ut.jsReplace("F-3", Ut.f("존재하지 않는아이디(%s) 입니다", loginId), "../member/login");
+			return Ut.jsHistoryBack("F-3", Ut.f("%s(은)는 존재하지 않는 아이디입니다", loginId));
 		}
 
 		if (member.getLoginPw().equals(loginPw) == false) {
-			return Ut.jsReplace("F-4", Ut.f("비밀번호가 일치하지 않습니다"), "../member/login");
+			return Ut.jsHistoryBack("F-4", Ut.f("비밀번호가 일치하지 않습니다"));
 		}
 
-		httpSession.setAttribute("loginedMemberId", member.getId());
+		rq.login(member);
 
-		return Ut.jsReplace("S-1", Ut.f("%s님 로그인을 환영합니다", member.getName()), "../home/main");
-
-	}
-
-	@RequestMapping("/usr/member/Join")
-	public String Join() {
-
-		return "usr/member/join";
+		return Ut.jsReplace("S-1", Ut.f("%s님 환영합니다", member.getNickname()), "/");
 	}
 
 	@RequestMapping("/usr/member/doJoin")
 	@ResponseBody
-	public ResultData<Member> doJoin(HttpSession httpSession, String loginId, String loginPw, String name,
+	public ResultData<Member> doJoin(HttpServletRequest req, String loginId, String loginPw, String name,
 			String nickname, String cellphoneNum, String email) {
-		boolean isLogined = false;
-
-		if (httpSession.getAttribute("loginedMemberId") != null) {
-			isLogined = true;
-		}
-
-		if (isLogined) {
+		Rq rq = (Rq) req.getAttribute("rq");
+		if (rq.isLogined()) {
 			return ResultData.from("F-A", "이미 로그인 상태입니다");
 		}
 
