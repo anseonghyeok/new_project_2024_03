@@ -1,55 +1,37 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<c:set var="pageTitle" value="login"></c:set>
+<c:set var="pageTitle" value="LOGIN"></c:set>
 <%@ include file="../common/head.jspf"%>
 
 
-<script type="text/javascript">
-	var LoginForm__submitDone = false;
-
-	function LoginForm__submit(form) {
-		if (LoginForm__submitDone) {
-			alert('이미 처리중입니다');
-			return;
-		}
-		var loginId = form.loginId.value.trim();
-		var loginPw = form.loginPw.value.trim();
-
-		console.log('form.loginId.value : ' + loginId);
-		console.log('form.loginPw.value : ' + loginPw);
-
-		if (loginId.length == 0) {
-			alert('아이디를 입력해주세요');
-			form.loginId.focus();
-			return;
-		}
-		if (loginPw.length == 0) {
-			alert('비밀번호를 입력해주세요');
-			form.loginPw.focus();
-			return;
-		}
-
-		LoginForm__submitDone = true;
-		form.submit();
-
-	}
-</script>
-
-<form method="POST" action="doLogin" onsubmit="LoginForm__submit(this); return false;">
-	<div>
-		로그인 아이디 : <input autocomplete="off" type="text" placeholder="아이디를 입력해주세요" name="loginId" required />
+<section class="mt-8 text-xl px-4">
+	<div class="mx-auto">
+		<form action="../member/doLogin" method="POST">
+			<table class="login-box table-box-1" border="1">
+				<tbody>
+					<tr>
+						<th>아이디</th>
+						<td><input class="input input-bordered input-primary w-full max-w-xs" autocomplete="off" type="text"
+							placeholder="아이디를 입력해주세요" name="loginId" /></td>
+					</tr>
+					<tr>
+						<th>비밀번호</th>
+						<td><input class="input input-bordered input-primary w-full max-w-xs" autocomplete="off" type="text"
+							placeholder="비밀번호를 입력해주세요" name="loginPw" /></td>
+					</tr>
+					<tr>
+						<th></th>
+						<td><input class="btn btn-outline btn-info" type="submit" value="로그인" /></td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+		<div class="btns">
+			<button class="btn btn-outline" type="button" onclick="history.back();">뒤로가기</button>
+		</div>
 	</div>
-	<div>
-		로그인 비밀번호 : <input autocomplete="off" type="text" placeholder="비밀번호를 입력해주세요" name="loginPw" required />
-	</div>
+</section>
 
-	<button type="submit">로그인</button>
-</form>
-
-
-<div>
-	<a style="color: green" href="../article/list">리스트로 돌아가기</a>
-</div>
 
 
 <%@ include file="../common/foot.jspf"%>

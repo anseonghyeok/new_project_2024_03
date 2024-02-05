@@ -48,6 +48,19 @@ public class UsrMemberController {
 		return "usr/member/login";
 	}
 
+	@RequestMapping("/usr/member/join")
+	public String join(HttpServletRequest req) {
+
+		Rq rq = (Rq) req.getAttribute("rq");
+
+		if (rq.isLogined()) {
+			return Ut.jsHistoryBack("F-A", "이미 로그인 함");
+		}
+
+		return "usr/member/join";
+
+	}
+
 	@RequestMapping("/usr/member/doLogin")
 	@ResponseBody
 	public String doLogin(HttpServletRequest req, String loginId, String loginPw) {

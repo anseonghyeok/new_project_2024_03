@@ -5,14 +5,14 @@
 
 
 <section class="mt-8 text-xl px-4">
-	<div class="mx-auto">
-		<table class="table-box-1" border="1">
-		<colgroup>
-		<col style="width:10%"/>
-		<col style="width:20%"/>
-		<col style="width:60%"/>
-		<col style="width:10%"/>
-		</colgroup>
+	<div class="mx-auto overflow-x-auto">
+		<table class="table-box-1 table table-zebra" border="1">
+			<colgroup>
+				<col style="width: 10%" />
+				<col style="width: 20%" />
+				<col style="width: 60%" />
+				<col style="width: 10%" />
+			</colgroup>
 			<thead>
 				<tr>
 					<th>번호</th>

@@ -4,8 +4,10 @@
 	font-style: normal;
 	font-weight: 400;
 	src:
-		url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2') format('woff2'),
-		url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff') format('woff');
+		url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2')
+		format('woff2'),
+		url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff')
+		format('woff');
 }
 
 @font-face {
@@ -13,8 +15,10 @@
 	font-style: normal;
 	font-weight: 700;
 	src:
-		url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2') format('woff2'),
-		url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff') format('woff');
+		url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2')
+		format('woff2'),
+		url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff')
+		format('woff');
 }
 
 @font-face {
@@ -22,8 +26,10 @@
 	font-style: normal;
 	font-weight: 300;
 	src:
-		url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2') format('woff2'),
-		url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff') format('woff');
+		url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2')
+		format('woff2'),
+		url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff')
+		format('woff');
 }
 
 .lottemartdream * {
@@ -41,8 +47,22 @@ header>div>ul>li {
 	margin-right: 30px;
 }
 
-.table-box-1 th,
-.table-box-1 td {
+/* .login-box>tbody>tr>td>input { */
+/* 	padding-left: 10px; */
+/* } */
+
+/* .login-box>tbody>tr:nth-child(3)>td>input { */
+/* 	padding-left: 0; */
+/* } */
+
+/* .join-box>tbody>tr:nth-child(7)>td>input { */
+/* 	padding-left: 0; */
+/* } */
+
+/* .modify-box>tbody>tr:nth-child(5)>td>input, .modify-box>tbody>tr:nth-child(6)>td>input, */
+/* 	.modify-box>tbody>tr:nth-child(7)>td>input { */
+/* } */
+.table-box-1 th, .table-box-1 td {
 	border: 1px solid black;
 	padding: 10px;
 	text-align: center;
