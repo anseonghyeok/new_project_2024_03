@@ -7,6 +7,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import com.example.demo.interceptor.BeforeActionInterceptor;
 import com.example.demo.interceptor.NeedLoginInterceptor;
+import com.example.demo.interceptor.NeedLogoutInterceptor;
 
 @Configuration
 public class MyWebMVCConfigurer implements WebMvcConfigurer {
@@ -19,9 +20,9 @@ public class MyWebMVCConfigurer implements WebMvcConfigurer {
 	@Autowired
 	NeedLoginInterceptor needLoginInterceptor;
 
-	// NeedLoginInterceptor 불러오기(연결)
+	// NeedLogoutInterceptor 불러오기(연결)
 	@Autowired
-	NeedLoginInterceptor LoginedInterceptor;
+	NeedLogoutInterceptor needLogoutInterceptor;
 
 	// 인터셉터 등록(적용)
 	public void addInterceptors(InterceptorRegistry registry) {
@@ -30,9 +31,11 @@ public class MyWebMVCConfigurer implements WebMvcConfigurer {
 
 		registry.addInterceptor(needLoginInterceptor).addPathPatterns("/usr/article/write")
 				.addPathPatterns("/usr/article/doWrite").addPathPatterns("/usr/article/modify")
-				.addPathPatterns("/usr/article/doModify").addPathPatterns("/usr/article/doDelete")
-				.addPathPatterns("/usr/member/doLogout");
+				.addPathPatterns("/usr/article/doModify").addPathPatterns("/usr/article/doDelete");
 
+		registry.addInterceptor(needLogoutInterceptor).addPathPatterns("/usr/member/login")
+				.addPathPatterns("/usr/member/doLogin").addPathPatterns("/usr/member/join")
+				.addPathPatterns("/usr/member/doJoin");
 	}
 
 }

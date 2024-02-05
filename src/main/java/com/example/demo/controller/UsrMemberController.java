@@ -12,10 +12,12 @@ import com.example.demo.vo.ResultData;
 import com.example.demo.vo.Rq;
 
 import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpSession;
 
 @Controller
 public class UsrMemberController {
+
+	@Autowired
+	private Rq rq;
 
 	@Autowired
 	private MemberService memberService;
@@ -25,9 +27,9 @@ public class UsrMemberController {
 	public String doLogout(HttpServletRequest req) {
 		Rq rq = (Rq) req.getAttribute("rq");
 
-//		if (!rq.isLogined()) {
-//			return Ut.jsHistoryBack("F-A", "이미 로그아웃 상태입니다");
-//		}
+		if (!rq.isLogined()) {
+			return Ut.jsHistoryBack("F-A", "이미 로그아웃 상태입니다");
+		}
 
 		rq.logout();
 
@@ -35,7 +37,13 @@ public class UsrMemberController {
 	}
 
 	@RequestMapping("/usr/member/login")
-	public String showLogin(HttpSession httpSession) {
+	public String showLogin(HttpServletRequest req) {
+
+		Rq rq = (Rq) req.getAttribute("rq");
+
+		if (rq.isLogined()) {
+			return Ut.jsHistoryBack("F-A", "이미 로그인 함");
+		}
 
 		return "usr/member/login";
 	}
