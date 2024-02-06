@@ -30,10 +30,17 @@
 						<td>${article.regDate.substring(0,10) }</td>
 						<td><a href="detail?id=${article.id }">${article.title }</a></td>
 						<td>${article.extra__writer }</td>
-					</tr>
+					</tr>1
 				</c:forEach>
 			</tbody>
 		</table>
+	</div>
+	<div class="pagination flex justify-center mt-3">
+		<div class="btn-group">
+			<c:forEach begin="1" end="20" var="i">
+				<a class="btn btn-sm ${param.page == i ? 'btn-active' : '' }" href="?page=${i }">${i }</a>
+			</c:forEach>
+		</div>
 	</div>
 </section>
 
