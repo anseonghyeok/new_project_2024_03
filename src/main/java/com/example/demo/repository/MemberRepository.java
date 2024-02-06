@@ -18,7 +18,7 @@ public interface MemberRepository {
 	@Select("""
 			SELECT *
 			FROM `member`
-			WHERE name = #{name}
+			WHERE name = #{name} 
 			AND email = #{email}
 			""")
 	public Member getMemberByNameAndEmail(String name, String email);
