@@ -111,4 +111,23 @@ public interface ArticleRepository {
 			""")
 	public List<Article> getForPrintArticles(int boardId, int limitFrom, int limitTake);
 
+	@Select("""
+			<script>
+			SELECT A.*, M.nickname AS extra__writer
+			FROM article AS A
+			INNER JOIN `member` AS M
+			ON A.memberId = M.id
+			WHERE 1
+			<if test="boardId != 0">
+				AND A.boardId = #{boardId}
+			</if>
+			title like'%#{Search}%'
+			ORDER BY A.id DESC
+			<if test="limitFrom >= 0 ">
+				LIMIT #{limitFrom}, #{limitTake}
+			</if>
+			</script>
+			""")
+	public List<Article> getForSearchPrintArticles(String Search, int boardId, int limitFrom, int limitTake);
+
 }
