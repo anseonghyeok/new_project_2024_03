@@ -152,6 +152,18 @@ INSERT INTO article
 SELECT NOW(),NOW(), FLOOR(RAND() * 2) + 2, FLOOR(RAND() * 3) + 1, CONCAT('제목_',RAND()), CONCAT('내용_',RAND())
 FROM article;
 
+UPDATE article 
+SET title = '제목5'
+WHERE id = 5;
+
+UPDATE article 
+SET title = '제목11'
+WHERE id = 6;
+
+UPDATE article 
+SET title = '제목45'
+WHERE id = 7;
+
 SELECT FLOOR(RAND() * 2) + 2
 
 SELECT FLOOR(RAND() * 3) + 1
@@ -170,3 +182,25 @@ SELECT *
 FROM `board`;
 
 SELECT LAST_INSERT_ID();
+
+SELECT *
+FROM article AS A
+WHERE 1
+
+	AND boardId = 1
+
+			AND A.title LIKE CONCAT('%','0000','%')
+			OR A.body LIKE CONCAT('%','0000','%')
+
+ORDER BY id DESC
+
+SELECT COUNT(*)
+FROM article AS A
+WHERE 1
+
+	AND boardId = 1
+
+			AND A.title LIKE CONCAT('%','0000','%')
+			OR A.body LIKE CONCAT('%','0000','%')
+
+ORDER BY id DESC
