@@ -103,4 +103,9 @@ public class ArticleService {
 				searchKeyword);
 	}
 
+	public int getupdateview(int id) {
+
+		return articleRepository.getupdateview(id);
+	}
+
 }

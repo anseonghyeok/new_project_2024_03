@@ -137,6 +137,14 @@ public interface ArticleRepository {
 			</if>
 			</script>
 			""")
-	public List<Article> getForPrintArticles(int boardId, int limitFrom, int limitTake, String searchKeywordTypeCode, String searchKeyword);
+	public List<Article> getForPrintArticles(int boardId, int limitFrom, int limitTake, String searchKeywordTypeCode,
+			String searchKeyword);
+
+	@Update("""
+			UPDATE article
+			set view = view +1
+			WHERE id = #{id}
+			""")
+	public int getupdateview(int id);
 
 }

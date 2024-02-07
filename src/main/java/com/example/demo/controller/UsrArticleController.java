@@ -78,9 +78,10 @@ public class UsrArticleController {
 		Rq rq = (Rq) req.getAttribute("rq");
 
 		Article article = articleService.getForPrintArticle(rq.getLoginedMemberId(), id);
+		int view = articleService.getupdateview(id);
 
 		model.addAttribute("article", article);
-
+		System.out.println(view);
 		return "usr/article/detail";
 	}
 

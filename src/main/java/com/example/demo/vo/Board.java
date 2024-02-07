@@ -17,3 +17,4 @@ public class Board {
 	private String delDate;
 
 }
+
