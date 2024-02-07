@@ -67,7 +67,7 @@
 
 
 
-<form method="POST" action="doLogin" onsubmit="LoginForm__submit(this); return false;">
+<form method="POST" action="dojoin" onsubmit="LoginForm__submit(this); return false;">
 	<div>
 		아이디 : <input class="input input-bordered input-primary   " autocomplete="off" type="text" placeholder="아이디를 입력해주세요"
 			name="loginId" required />

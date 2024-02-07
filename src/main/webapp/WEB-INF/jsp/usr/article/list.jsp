@@ -65,6 +65,22 @@
 			</c:forEach>
 		</div>
 	</div>
+
+	<form method="POST" action="../article/list">
+		<div>
+			Search term: <input class="input input-bordered input-primary" autocomplete="off" type="text" placeholder="검색어를 입력."
+				name="search" />
+		</div>
+
+		<div>
+			Search by: <label><input type="radio" name="st" value="title" checked> Title</label> <label><input
+				type="radio" name="st" value="body"> Body</label>
+		</div>
+
+		<button class="btn btn-outline btn-info" type="submit">Search</button>
+	</form>
+
+
 </section>
 
 
