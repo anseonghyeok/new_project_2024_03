@@ -67,6 +67,8 @@ public class UsrArticleController {
 		model.addAttribute("boardId", boardId);
 		model.addAttribute("page", page);
 		model.addAttribute("pagesCount", pagesCount);
+		model.addAttribute("searchKeywordTypeCode", searchKeywordTypeCode);
+		model.addAttribute("searchKeyword", searchKeyword);
 		model.addAttribute("articlesCount", articlesCount);
 		model.addAttribute("articles", articles);
 
@@ -77,11 +79,12 @@ public class UsrArticleController {
 	public String showDetail(HttpServletRequest req, Model model, int id) {
 		Rq rq = (Rq) req.getAttribute("rq");
 
+		articleService.increaseHitCount(id);
+
 		Article article = articleService.getForPrintArticle(rq.getLoginedMemberId(), id);
-		int view = articleService.getupdateview(id);
 
 		model.addAttribute("article", article);
-		System.out.println(view);
+
 		return "usr/article/detail";
 	}
 
