@@ -17756,3 +17756,1983 @@ Unconditional classes:
 2024-02-13 14:48:16 [DEBUG] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
 2024-02-13 14:48:16 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
 2024-02-13 14:48:16 [DEBUG] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2024-02-13 15:04:09 [INFO ] o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-13 15:04:09 [INFO ] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-02-13 15:04:09 [INFO ] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-02-13 15:04:09 [DEBUG] o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'scopedTarget.rq' via constructor to bean named 'jdk.proxy2.$Proxy79@1a90c3eb'
+2024-02-13 15:04:09 [DEBUG] o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'scopedTarget.rq' via constructor to bean named 'jdk.proxy2.$Proxy80@14572ec9'
+2024-02-13 15:04:10 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:10 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@572e32e3] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:10 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - HikariPool-5 - configuration:
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - autoCommit......................true
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - catalog.........................none
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - dataSource......................none
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - driverClassName................."net.sf.log4jdbc.sql.jdbcapi.DriverSpy"
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName......none
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:log4jdbc:mysql://127.0.0.1:3306/Spring_AM_01?useUnicode=true&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Seoul&useOldAliasMetadataBehavior=true&zeroDateTimeNehavior=convertToNull
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - keepaliveTime...................0
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - minimumIdle.....................10
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - password........................<masked>
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - poolName........................"HikariPool-5"
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - readOnly........................false
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - schema..........................none
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - username........................"root"
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+2024-02-13 15:04:10 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2024-02-13 15:04:10 [INFO ] com.zaxxer.hikari.pool.PoolBase - HikariPool-5 - Driver does not support get/set network timeout for connections. (Receiver class net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2024-02-13 15:04:10 [INFO ] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288
+2024-02-13 15:04:10 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2024-02-13 15:04:10 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2045348543 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:10 [DEBUG] c.e.d.r.BoardRepository.getBoardById - ==>  Preparing: SELECT * FROM board WHERE id = ? AND delStatus = 0;
+2024-02-13 15:04:10 [DEBUG] c.e.d.r.BoardRepository.getBoardById - ==> Parameters: 1(Integer)
+2024-02-13 15:04:10 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT *
+	FROM board
+	WHERE id = 1
+	AND delStatus = 0;
+ {executed in 0 msec}
+2024-02-13 15:04:10 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|-------|-----|----------|--------|
+|id |regdate             |updatedate          |code   |name |delstatus |deldate |
+|---|--------------------|--------------------|-------|-----|----------|--------|
+|1  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |NOTICE |공지사항 |false     |null    |
+|---|--------------------|--------------------|-------|-----|----------|--------|
+
+2024-02-13 15:04:10 [DEBUG] c.e.d.r.BoardRepository.getBoardById - <==      Total: 1
+2024-02-13 15:04:10 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@572e32e3]
+2024-02-13 15:04:10 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:10 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8c751ed] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:10 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:10 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@252887844 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:10 [DEBUG] c.e.d.r.A.getArticlesCount - ==>  Preparing: SELECT COUNT(*) AS cnt FROM article AS A WHERE 1 AND boardId = ? ORDER BY id DESC
+2024-02-13 15:04:10 [DEBUG] c.e.d.r.A.getArticlesCount - ==> Parameters: 1(Integer)
+2024-02-13 15:04:10 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT COUNT(*) AS cnt
+FROM article AS A
+WHERE 1
+
+	AND boardId = 1
+
+ORDER BY id DESC
+ {executed in 1 msec}
+2024-02-13 15:04:10 [INFO ] jdbc.resultsettable - 
+|----|
+|cnt |
+|----|
+|2   |
+|----|
+
+2024-02-13 15:04:10 [DEBUG] c.e.d.r.A.getArticlesCount - <==      Total: 1
+2024-02-13 15:04:10 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8c751ed]
+2024-02-13 15:04:10 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:10 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@383fd717] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:10 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:10 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@632156652 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:10 [DEBUG] c.e.d.r.A.getForPrintArticles - ==>  Preparing: SELECT A.*, M.nickname AS extra__writer FROM article AS A INNER JOIN `member` AS M ON A.memberId = M.id WHERE 1 AND A.boardId = ? ORDER BY A.id DESC LIMIT ?, ?
+2024-02-13 15:04:10 [DEBUG] c.e.d.r.A.getForPrintArticles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2024-02-13 15:04:10 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT A.*, M.nickname AS extra__writer
+FROM article AS A
+INNER JOIN `member` AS M
+ON A.memberId = M.id
+WHERE 1
+
+	AND A.boardId = 1
+
+ORDER BY A.id DESC
+
+	LIMIT 0, 10
+ {executed in 7 msec}
+2024-02-13 15:04:10 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|id |regdate             |updatedate          |memberid |boardid |title |body |hitcount |extra__writer |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|2  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목2   |내용2  |0        |회원1           |
+|1  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목1   |내용1  |2        |회원1           |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+
+2024-02-13 15:04:10 [DEBUG] c.e.d.r.A.getForPrintArticles - <==      Total: 2
+2024-02-13 15:04:10 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@383fd717]
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5e1cdfa5
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@1f21d59e
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@2e748c68
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@7f0e2ad1
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@1fe18908
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@26289dca
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@2601056d
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@70efcab9
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@30a68850
+2024-02-13 15:04:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:04:12 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:12 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78dc308d] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:12 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:12 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1038000626 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:12 [DEBUG] c.e.d.r.A.getForPrintArticle - ==>  Preparing: SELECT A.*, M.nickname AS extra__writer FROM article AS A INNER JOIN `member` AS M ON A.memberId = M.id WHERE A.id = ?
+2024-02-13 15:04:12 [DEBUG] c.e.d.r.A.getForPrintArticle - ==> Parameters: 2(Integer)
+2024-02-13 15:04:12 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT A.*, M.nickname AS extra__writer
+FROM article AS A
+INNER JOIN `member` AS M
+ON A.memberId = M.id
+WHERE A.id = 2
+ {executed in 0 msec}
+2024-02-13 15:04:12 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|id |regdate             |updatedate          |memberid |boardid |title |body |hitcount |extra__writer |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|2  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목2   |내용2  |0        |회원1           |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+
+2024-02-13 15:04:12 [DEBUG] c.e.d.r.A.getForPrintArticle - <==      Total: 1
+2024-02-13 15:04:12 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78dc308d]
+2024-02-13 15:04:12 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:12 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4f568fc] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:12 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:12 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1811290216 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:12 [DEBUG] c.e.d.r.A.increaseHitCount - ==>  Preparing: UPDATE article SET hitCount = hitCount + 1 WHERE id = ?
+2024-02-13 15:04:12 [DEBUG] c.e.d.r.A.increaseHitCount - ==> Parameters: 372(Integer)
+2024-02-13 15:04:12 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. UPDATE article
+SET hitCount = hitCount + 1
+WHERE id = 372
+ {executed in 0 msec}
+2024-02-13 15:04:12 [DEBUG] c.e.d.r.A.increaseHitCount - <==    Updates: 0
+2024-02-13 15:04:12 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4f568fc]
+2024-02-13 15:04:12 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:12 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6d480edb] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:12 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:12 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@360015337 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:12 [DEBUG] c.e.d.r.A.increaseHitCount - ==>  Preparing: UPDATE article SET hitCount = hitCount + 1 WHERE id = ?
+2024-02-13 15:04:12 [DEBUG] c.e.d.r.A.increaseHitCount - ==> Parameters: 2(Integer)
+2024-02-13 15:04:12 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. UPDATE article
+SET hitCount = hitCount + 1
+WHERE id = 2
+ {executed in 2 msec}
+2024-02-13 15:04:12 [DEBUG] c.e.d.r.A.increaseHitCount - <==    Updates: 1
+2024-02-13 15:04:12 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6d480edb]
+2024-02-13 15:04:12 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:12 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@419c339d] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:12 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:12 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2138590314 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:12 [DEBUG] c.e.d.r.A.getArticleHitCount - ==>  Preparing: SELECT hitCount FROM article WHERE id = ?
+2024-02-13 15:04:12 [DEBUG] c.e.d.r.A.getArticleHitCount - ==> Parameters: 2(Integer)
+2024-02-13 15:04:12 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT hitCount
+FROM article
+WHERE id = 2
+ {executed in 0 msec}
+2024-02-13 15:04:12 [INFO ] jdbc.resultsettable - 
+|---------|
+|hitcount |
+|---------|
+|1        |
+|---------|
+
+2024-02-13 15:04:12 [DEBUG] c.e.d.r.A.getArticleHitCount - <==      Total: 1
+2024-02-13 15:04:12 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@419c339d]
+2024-02-13 15:04:14 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:14 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7993e1fc] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:14 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:14 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@119525239 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:14 [DEBUG] c.e.d.r.A.increaseHitCount - ==>  Preparing: UPDATE article SET hitCount = hitCount + 1 WHERE id = ?
+2024-02-13 15:04:14 [DEBUG] c.e.d.r.A.increaseHitCount - ==> Parameters: 2(Integer)
+2024-02-13 15:04:14 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. UPDATE article
+SET hitCount = hitCount + 1
+WHERE id = 2
+ {executed in 3 msec}
+2024-02-13 15:04:14 [DEBUG] c.e.d.r.A.increaseHitCount - <==    Updates: 1
+2024-02-13 15:04:14 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7993e1fc]
+2024-02-13 15:04:14 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:14 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19bc1eb3] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:14 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:14 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1621167748 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:14 [DEBUG] c.e.d.r.A.getArticleHitCount - ==>  Preparing: SELECT hitCount FROM article WHERE id = ?
+2024-02-13 15:04:14 [DEBUG] c.e.d.r.A.getArticleHitCount - ==> Parameters: 2(Integer)
+2024-02-13 15:04:14 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT hitCount
+FROM article
+WHERE id = 2
+ {executed in 0 msec}
+2024-02-13 15:04:14 [INFO ] jdbc.resultsettable - 
+|---------|
+|hitcount |
+|---------|
+|2        |
+|---------|
+
+2024-02-13 15:04:14 [DEBUG] c.e.d.r.A.getArticleHitCount - <==      Total: 1
+2024-02-13 15:04:14 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19bc1eb3]
+2024-02-13 15:04:19 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:19 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6517475a] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:19 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:19 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@571429490 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:19 [DEBUG] c.e.d.r.A.getForPrintArticle - ==>  Preparing: SELECT A.*, M.nickname AS extra__writer FROM article AS A INNER JOIN `member` AS M ON A.memberId = M.id WHERE A.id = ?
+2024-02-13 15:04:19 [DEBUG] c.e.d.r.A.getForPrintArticle - ==> Parameters: 2(Integer)
+2024-02-13 15:04:19 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT A.*, M.nickname AS extra__writer
+FROM article AS A
+INNER JOIN `member` AS M
+ON A.memberId = M.id
+WHERE A.id = 2
+ {executed in 1 msec}
+2024-02-13 15:04:19 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|id |regdate             |updatedate          |memberid |boardid |title |body |hitcount |extra__writer |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|2  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목2   |내용2  |2        |회원1           |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+
+2024-02-13 15:04:19 [DEBUG] c.e.d.r.A.getForPrintArticle - <==      Total: 1
+2024-02-13 15:04:19 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6517475a]
+2024-02-13 15:04:19 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:19 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d2f50e1] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:19 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:19 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1651642242 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:19 [DEBUG] c.e.d.r.A.increaseHitCount - ==>  Preparing: UPDATE article SET hitCount = hitCount + 1 WHERE id = ?
+2024-02-13 15:04:19 [DEBUG] c.e.d.r.A.increaseHitCount - ==> Parameters: 372(Integer)
+2024-02-13 15:04:19 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. UPDATE article
+SET hitCount = hitCount + 1
+WHERE id = 372
+ {executed in 0 msec}
+2024-02-13 15:04:19 [DEBUG] c.e.d.r.A.increaseHitCount - <==    Updates: 0
+2024-02-13 15:04:19 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d2f50e1]
+2024-02-13 15:04:19 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:19 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5b63bb07] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:19 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:19 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1946195363 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:19 [DEBUG] c.e.d.r.A.increaseHitCount - ==>  Preparing: UPDATE article SET hitCount = hitCount + 1 WHERE id = ?
+2024-02-13 15:04:19 [DEBUG] c.e.d.r.A.increaseHitCount - ==> Parameters: 2(Integer)
+2024-02-13 15:04:19 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. UPDATE article
+SET hitCount = hitCount + 1
+WHERE id = 2
+ {executed in 2 msec}
+2024-02-13 15:04:19 [DEBUG] c.e.d.r.A.increaseHitCount - <==    Updates: 1
+2024-02-13 15:04:19 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5b63bb07]
+2024-02-13 15:04:19 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:19 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28f6c051] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:19 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:19 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1487660385 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:19 [DEBUG] c.e.d.r.A.getArticleHitCount - ==>  Preparing: SELECT hitCount FROM article WHERE id = ?
+2024-02-13 15:04:19 [DEBUG] c.e.d.r.A.getArticleHitCount - ==> Parameters: 2(Integer)
+2024-02-13 15:04:19 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT hitCount
+FROM article
+WHERE id = 2
+ {executed in 0 msec}
+2024-02-13 15:04:19 [INFO ] jdbc.resultsettable - 
+|---------|
+|hitcount |
+|---------|
+|3        |
+|---------|
+
+2024-02-13 15:04:19 [DEBUG] c.e.d.r.A.getArticleHitCount - <==      Total: 1
+2024-02-13 15:04:19 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28f6c051]
+2024-02-13 15:04:22 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:22 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d50de39] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:22 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:22 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@519585444 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:22 [DEBUG] c.e.d.r.BoardRepository.getBoardById - ==>  Preparing: SELECT * FROM board WHERE id = ? AND delStatus = 0;
+2024-02-13 15:04:22 [DEBUG] c.e.d.r.BoardRepository.getBoardById - ==> Parameters: 1(Integer)
+2024-02-13 15:04:22 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT *
+	FROM board
+	WHERE id = 1
+	AND delStatus = 0;
+ {executed in 1 msec}
+2024-02-13 15:04:22 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|-------|-----|----------|--------|
+|id |regdate             |updatedate          |code   |name |delstatus |deldate |
+|---|--------------------|--------------------|-------|-----|----------|--------|
+|1  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |NOTICE |공지사항 |false     |null    |
+|---|--------------------|--------------------|-------|-----|----------|--------|
+
+2024-02-13 15:04:22 [DEBUG] c.e.d.r.BoardRepository.getBoardById - <==      Total: 1
+2024-02-13 15:04:22 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d50de39]
+2024-02-13 15:04:22 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:22 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d0b0291] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:22 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:22 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@143187686 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:22 [DEBUG] c.e.d.r.A.getArticlesCount - ==>  Preparing: SELECT COUNT(*) AS cnt FROM article AS A WHERE 1 AND boardId = ? ORDER BY id DESC
+2024-02-13 15:04:22 [DEBUG] c.e.d.r.A.getArticlesCount - ==> Parameters: 1(Integer)
+2024-02-13 15:04:22 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT COUNT(*) AS cnt
+FROM article AS A
+WHERE 1
+
+	AND boardId = 1
+
+ORDER BY id DESC
+ {executed in 0 msec}
+2024-02-13 15:04:22 [INFO ] jdbc.resultsettable - 
+|----|
+|cnt |
+|----|
+|2   |
+|----|
+
+2024-02-13 15:04:22 [DEBUG] c.e.d.r.A.getArticlesCount - <==      Total: 1
+2024-02-13 15:04:22 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d0b0291]
+2024-02-13 15:04:22 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:22 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@339db39c] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:22 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:22 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@744479828 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:22 [DEBUG] c.e.d.r.A.getForPrintArticles - ==>  Preparing: SELECT A.*, M.nickname AS extra__writer FROM article AS A INNER JOIN `member` AS M ON A.memberId = M.id WHERE 1 AND A.boardId = ? ORDER BY A.id DESC LIMIT ?, ?
+2024-02-13 15:04:22 [DEBUG] c.e.d.r.A.getForPrintArticles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2024-02-13 15:04:22 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT A.*, M.nickname AS extra__writer
+FROM article AS A
+INNER JOIN `member` AS M
+ON A.memberId = M.id
+WHERE 1
+
+	AND A.boardId = 1
+
+ORDER BY A.id DESC
+
+	LIMIT 0, 10
+ {executed in 7 msec}
+2024-02-13 15:04:22 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|id |regdate             |updatedate          |memberid |boardid |title |body |hitcount |extra__writer |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|2  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목2   |내용2  |3        |회원1           |
+|1  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목1   |내용1  |2        |회원1           |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+
+2024-02-13 15:04:22 [DEBUG] c.e.d.r.A.getForPrintArticles - <==      Total: 2
+2024-02-13 15:04:22 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@339db39c]
+2024-02-13 15:04:23 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:23 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f0c013b] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:23 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:23 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1646623740 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:23 [DEBUG] c.e.d.r.BoardRepository.getBoardById - ==>  Preparing: SELECT * FROM board WHERE id = ? AND delStatus = 0;
+2024-02-13 15:04:23 [DEBUG] c.e.d.r.BoardRepository.getBoardById - ==> Parameters: 1(Integer)
+2024-02-13 15:04:23 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT *
+	FROM board
+	WHERE id = 1
+	AND delStatus = 0;
+ {executed in 1 msec}
+2024-02-13 15:04:23 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|-------|-----|----------|--------|
+|id |regdate             |updatedate          |code   |name |delstatus |deldate |
+|---|--------------------|--------------------|-------|-----|----------|--------|
+|1  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |NOTICE |공지사항 |false     |null    |
+|---|--------------------|--------------------|-------|-----|----------|--------|
+
+2024-02-13 15:04:23 [DEBUG] c.e.d.r.BoardRepository.getBoardById - <==      Total: 1
+2024-02-13 15:04:23 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f0c013b]
+2024-02-13 15:04:23 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:23 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@af86e0e] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:23 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:23 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1297654525 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:23 [DEBUG] c.e.d.r.A.getArticlesCount - ==>  Preparing: SELECT COUNT(*) AS cnt FROM article AS A WHERE 1 AND boardId = ? ORDER BY id DESC
+2024-02-13 15:04:23 [DEBUG] c.e.d.r.A.getArticlesCount - ==> Parameters: 1(Integer)
+2024-02-13 15:04:23 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT COUNT(*) AS cnt
+FROM article AS A
+WHERE 1
+
+	AND boardId = 1
+
+ORDER BY id DESC
+ {executed in 0 msec}
+2024-02-13 15:04:23 [INFO ] jdbc.resultsettable - 
+|----|
+|cnt |
+|----|
+|2   |
+|----|
+
+2024-02-13 15:04:23 [DEBUG] c.e.d.r.A.getArticlesCount - <==      Total: 1
+2024-02-13 15:04:23 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@af86e0e]
+2024-02-13 15:04:23 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:23 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@735a7594] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:23 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:23 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1258530610 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:23 [DEBUG] c.e.d.r.A.getForPrintArticles - ==>  Preparing: SELECT A.*, M.nickname AS extra__writer FROM article AS A INNER JOIN `member` AS M ON A.memberId = M.id WHERE 1 AND A.boardId = ? ORDER BY A.id DESC LIMIT ?, ?
+2024-02-13 15:04:23 [DEBUG] c.e.d.r.A.getForPrintArticles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2024-02-13 15:04:23 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT A.*, M.nickname AS extra__writer
+FROM article AS A
+INNER JOIN `member` AS M
+ON A.memberId = M.id
+WHERE 1
+
+	AND A.boardId = 1
+
+ORDER BY A.id DESC
+
+	LIMIT 0, 10
+ {executed in 8 msec}
+2024-02-13 15:04:23 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|id |regdate             |updatedate          |memberid |boardid |title |body |hitcount |extra__writer |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|2  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목2   |내용2  |3        |회원1           |
+|1  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목1   |내용1  |2        |회원1           |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+
+2024-02-13 15:04:23 [DEBUG] c.e.d.r.A.getForPrintArticles - <==      Total: 2
+2024-02-13 15:04:23 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@735a7594]
+2024-02-13 15:04:26 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:26 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f122d15] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:26 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:26 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1278732735 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:26 [DEBUG] c.e.d.r.A.getForPrintArticle - ==>  Preparing: SELECT A.*, M.nickname AS extra__writer FROM article AS A INNER JOIN `member` AS M ON A.memberId = M.id WHERE A.id = ?
+2024-02-13 15:04:26 [DEBUG] c.e.d.r.A.getForPrintArticle - ==> Parameters: 2(Integer)
+2024-02-13 15:04:26 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT A.*, M.nickname AS extra__writer
+FROM article AS A
+INNER JOIN `member` AS M
+ON A.memberId = M.id
+WHERE A.id = 2
+ {executed in 0 msec}
+2024-02-13 15:04:26 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|id |regdate             |updatedate          |memberid |boardid |title |body |hitcount |extra__writer |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|2  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목2   |내용2  |3        |회원1           |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+
+2024-02-13 15:04:26 [DEBUG] c.e.d.r.A.getForPrintArticle - <==      Total: 1
+2024-02-13 15:04:26 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f122d15]
+2024-02-13 15:04:26 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:26 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24504abd] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:26 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:26 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@411661447 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:26 [DEBUG] c.e.d.r.A.increaseHitCount - ==>  Preparing: UPDATE article SET hitCount = hitCount + 1 WHERE id = ?
+2024-02-13 15:04:26 [DEBUG] c.e.d.r.A.increaseHitCount - ==> Parameters: 372(Integer)
+2024-02-13 15:04:26 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. UPDATE article
+SET hitCount = hitCount + 1
+WHERE id = 372
+ {executed in 0 msec}
+2024-02-13 15:04:26 [DEBUG] c.e.d.r.A.increaseHitCount - <==    Updates: 0
+2024-02-13 15:04:26 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24504abd]
+2024-02-13 15:04:26 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:26 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15b1b87c] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:26 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:26 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@783509502 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:26 [DEBUG] c.e.d.r.A.increaseHitCount - ==>  Preparing: UPDATE article SET hitCount = hitCount + 1 WHERE id = ?
+2024-02-13 15:04:26 [DEBUG] c.e.d.r.A.increaseHitCount - ==> Parameters: 2(Integer)
+2024-02-13 15:04:26 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. UPDATE article
+SET hitCount = hitCount + 1
+WHERE id = 2
+ {executed in 3 msec}
+2024-02-13 15:04:26 [DEBUG] c.e.d.r.A.increaseHitCount - <==    Updates: 1
+2024-02-13 15:04:26 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15b1b87c]
+2024-02-13 15:04:26 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:26 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4949afc4] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:26 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:26 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2096147844 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:26 [DEBUG] c.e.d.r.A.getArticleHitCount - ==>  Preparing: SELECT hitCount FROM article WHERE id = ?
+2024-02-13 15:04:26 [DEBUG] c.e.d.r.A.getArticleHitCount - ==> Parameters: 2(Integer)
+2024-02-13 15:04:26 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT hitCount
+FROM article
+WHERE id = 2
+ {executed in 0 msec}
+2024-02-13 15:04:26 [INFO ] jdbc.resultsettable - 
+|---------|
+|hitcount |
+|---------|
+|4        |
+|---------|
+
+2024-02-13 15:04:26 [DEBUG] c.e.d.r.A.getArticleHitCount - <==      Total: 1
+2024-02-13 15:04:26 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4949afc4]
+2024-02-13 15:04:28 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:28 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@283fbdb8] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:28 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:28 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1416520327 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:28 [DEBUG] c.e.d.r.A.increaseHitCount - ==>  Preparing: UPDATE article SET hitCount = hitCount + 1 WHERE id = ?
+2024-02-13 15:04:28 [DEBUG] c.e.d.r.A.increaseHitCount - ==> Parameters: 2(Integer)
+2024-02-13 15:04:28 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. UPDATE article
+SET hitCount = hitCount + 1
+WHERE id = 2
+ {executed in 3 msec}
+2024-02-13 15:04:28 [DEBUG] c.e.d.r.A.increaseHitCount - <==    Updates: 1
+2024-02-13 15:04:28 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@283fbdb8]
+2024-02-13 15:04:28 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:28 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@531dd88] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:28 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:28 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@585952755 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:28 [DEBUG] c.e.d.r.A.getArticleHitCount - ==>  Preparing: SELECT hitCount FROM article WHERE id = ?
+2024-02-13 15:04:28 [DEBUG] c.e.d.r.A.getArticleHitCount - ==> Parameters: 2(Integer)
+2024-02-13 15:04:28 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT hitCount
+FROM article
+WHERE id = 2
+ {executed in 0 msec}
+2024-02-13 15:04:28 [INFO ] jdbc.resultsettable - 
+|---------|
+|hitcount |
+|---------|
+|5        |
+|---------|
+
+2024-02-13 15:04:28 [DEBUG] c.e.d.r.A.getArticleHitCount - <==      Total: 1
+2024-02-13 15:04:28 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@531dd88]
+2024-02-13 15:04:40 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:04:40 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:04:42 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:42 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@37a37fcf] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:42 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:42 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@37548496 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:42 [DEBUG] c.e.d.r.BoardRepository.getBoardById - ==>  Preparing: SELECT * FROM board WHERE id = ? AND delStatus = 0;
+2024-02-13 15:04:42 [DEBUG] c.e.d.r.BoardRepository.getBoardById - ==> Parameters: 1(Integer)
+2024-02-13 15:04:42 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT *
+	FROM board
+	WHERE id = 1
+	AND delStatus = 0;
+ {executed in 1 msec}
+2024-02-13 15:04:42 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|-------|-----|----------|--------|
+|id |regdate             |updatedate          |code   |name |delstatus |deldate |
+|---|--------------------|--------------------|-------|-----|----------|--------|
+|1  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |NOTICE |공지사항 |false     |null    |
+|---|--------------------|--------------------|-------|-----|----------|--------|
+
+2024-02-13 15:04:42 [DEBUG] c.e.d.r.BoardRepository.getBoardById - <==      Total: 1
+2024-02-13 15:04:42 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@37a37fcf]
+2024-02-13 15:04:42 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:42 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@22b49b72] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:42 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:42 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1798014647 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:42 [DEBUG] c.e.d.r.A.getArticlesCount - ==>  Preparing: SELECT COUNT(*) AS cnt FROM article AS A WHERE 1 AND boardId = ? ORDER BY id DESC
+2024-02-13 15:04:42 [DEBUG] c.e.d.r.A.getArticlesCount - ==> Parameters: 1(Integer)
+2024-02-13 15:04:42 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT COUNT(*) AS cnt
+FROM article AS A
+WHERE 1
+
+	AND boardId = 1
+
+ORDER BY id DESC
+ {executed in 0 msec}
+2024-02-13 15:04:42 [INFO ] jdbc.resultsettable - 
+|----|
+|cnt |
+|----|
+|2   |
+|----|
+
+2024-02-13 15:04:42 [DEBUG] c.e.d.r.A.getArticlesCount - <==      Total: 1
+2024-02-13 15:04:42 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@22b49b72]
+2024-02-13 15:04:42 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:42 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47b1d2f] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:42 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:42 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@272500183 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:42 [DEBUG] c.e.d.r.A.getForPrintArticles - ==>  Preparing: SELECT A.*, M.nickname AS extra__writer FROM article AS A INNER JOIN `member` AS M ON A.memberId = M.id WHERE 1 AND A.boardId = ? ORDER BY A.id DESC LIMIT ?, ?
+2024-02-13 15:04:42 [DEBUG] c.e.d.r.A.getForPrintArticles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2024-02-13 15:04:42 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT A.*, M.nickname AS extra__writer
+FROM article AS A
+INNER JOIN `member` AS M
+ON A.memberId = M.id
+WHERE 1
+
+	AND A.boardId = 1
+
+ORDER BY A.id DESC
+
+	LIMIT 0, 10
+ {executed in 13 msec}
+2024-02-13 15:04:42 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|id |regdate             |updatedate          |memberid |boardid |title |body |hitcount |extra__writer |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|2  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목2   |내용2  |5        |회원1           |
+|1  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목1   |내용1  |2        |회원1           |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+
+2024-02-13 15:04:42 [DEBUG] c.e.d.r.A.getForPrintArticles - <==      Total: 2
+2024-02-13 15:04:42 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47b1d2f]
+2024-02-13 15:04:43 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:43 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4e0d9ed6] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:43 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:43 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@892672147 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:43 [DEBUG] c.e.d.r.BoardRepository.getBoardById - ==>  Preparing: SELECT * FROM board WHERE id = ? AND delStatus = 0;
+2024-02-13 15:04:43 [DEBUG] c.e.d.r.BoardRepository.getBoardById - ==> Parameters: 1(Integer)
+2024-02-13 15:04:43 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT *
+	FROM board
+	WHERE id = 1
+	AND delStatus = 0;
+ {executed in 0 msec}
+2024-02-13 15:04:43 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|-------|-----|----------|--------|
+|id |regdate             |updatedate          |code   |name |delstatus |deldate |
+|---|--------------------|--------------------|-------|-----|----------|--------|
+|1  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |NOTICE |공지사항 |false     |null    |
+|---|--------------------|--------------------|-------|-----|----------|--------|
+
+2024-02-13 15:04:43 [DEBUG] c.e.d.r.BoardRepository.getBoardById - <==      Total: 1
+2024-02-13 15:04:43 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4e0d9ed6]
+2024-02-13 15:04:43 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:43 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@394a7423] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:43 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:43 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2142543620 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:43 [DEBUG] c.e.d.r.A.getArticlesCount - ==>  Preparing: SELECT COUNT(*) AS cnt FROM article AS A WHERE 1 AND boardId = ? ORDER BY id DESC
+2024-02-13 15:04:43 [DEBUG] c.e.d.r.A.getArticlesCount - ==> Parameters: 1(Integer)
+2024-02-13 15:04:43 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT COUNT(*) AS cnt
+FROM article AS A
+WHERE 1
+
+	AND boardId = 1
+
+ORDER BY id DESC
+ {executed in 1 msec}
+2024-02-13 15:04:43 [INFO ] jdbc.resultsettable - 
+|----|
+|cnt |
+|----|
+|2   |
+|----|
+
+2024-02-13 15:04:43 [DEBUG] c.e.d.r.A.getArticlesCount - <==      Total: 1
+2024-02-13 15:04:43 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@394a7423]
+2024-02-13 15:04:43 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:43 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@719113a4] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:43 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:43 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1894524933 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:43 [DEBUG] c.e.d.r.A.getForPrintArticles - ==>  Preparing: SELECT A.*, M.nickname AS extra__writer FROM article AS A INNER JOIN `member` AS M ON A.memberId = M.id WHERE 1 AND A.boardId = ? ORDER BY A.id DESC LIMIT ?, ?
+2024-02-13 15:04:43 [DEBUG] c.e.d.r.A.getForPrintArticles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2024-02-13 15:04:43 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT A.*, M.nickname AS extra__writer
+FROM article AS A
+INNER JOIN `member` AS M
+ON A.memberId = M.id
+WHERE 1
+
+	AND A.boardId = 1
+
+ORDER BY A.id DESC
+
+	LIMIT 0, 10
+ {executed in 8 msec}
+2024-02-13 15:04:43 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|id |regdate             |updatedate          |memberid |boardid |title |body |hitcount |extra__writer |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|2  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목2   |내용2  |5        |회원1           |
+|1  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목1   |내용1  |2        |회원1           |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+
+2024-02-13 15:04:43 [DEBUG] c.e.d.r.A.getForPrintArticles - <==      Total: 2
+2024-02-13 15:04:43 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@719113a4]
+2024-02-13 15:04:44 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:44 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18bc457] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:44 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:44 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@961443351 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:44 [DEBUG] c.e.d.r.A.getForPrintArticle - ==>  Preparing: SELECT A.*, M.nickname AS extra__writer FROM article AS A INNER JOIN `member` AS M ON A.memberId = M.id WHERE A.id = ?
+2024-02-13 15:04:44 [DEBUG] c.e.d.r.A.getForPrintArticle - ==> Parameters: 2(Integer)
+2024-02-13 15:04:44 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT A.*, M.nickname AS extra__writer
+FROM article AS A
+INNER JOIN `member` AS M
+ON A.memberId = M.id
+WHERE A.id = 2
+ {executed in 1 msec}
+2024-02-13 15:04:44 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|id |regdate             |updatedate          |memberid |boardid |title |body |hitcount |extra__writer |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|2  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목2   |내용2  |5        |회원1           |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+
+2024-02-13 15:04:44 [DEBUG] c.e.d.r.A.getForPrintArticle - <==      Total: 1
+2024-02-13 15:04:44 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18bc457]
+2024-02-13 15:04:44 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:44 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6550d62d] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:44 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:44 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1564273259 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:44 [DEBUG] c.e.d.r.A.increaseHitCount - ==>  Preparing: UPDATE article SET hitCount = hitCount + 1 WHERE id = ?
+2024-02-13 15:04:44 [DEBUG] c.e.d.r.A.increaseHitCount - ==> Parameters: 372(Integer)
+2024-02-13 15:04:44 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. UPDATE article
+SET hitCount = hitCount + 1
+WHERE id = 372
+ {executed in 0 msec}
+2024-02-13 15:04:44 [DEBUG] c.e.d.r.A.increaseHitCount - <==    Updates: 0
+2024-02-13 15:04:44 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6550d62d]
+2024-02-13 15:04:44 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:44 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@53083b5b] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:44 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:44 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1384258254 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:44 [DEBUG] c.e.d.r.A.increaseHitCount - ==>  Preparing: UPDATE article SET hitCount = hitCount + 1 WHERE id = ?
+2024-02-13 15:04:44 [DEBUG] c.e.d.r.A.increaseHitCount - ==> Parameters: 2(Integer)
+2024-02-13 15:04:44 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. UPDATE article
+SET hitCount = hitCount + 1
+WHERE id = 2
+ {executed in 3 msec}
+2024-02-13 15:04:44 [DEBUG] c.e.d.r.A.increaseHitCount - <==    Updates: 1
+2024-02-13 15:04:44 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@53083b5b]
+2024-02-13 15:04:44 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:44 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3ead1cf2] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:44 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:44 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2092639619 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:44 [DEBUG] c.e.d.r.A.getArticleHitCount - ==>  Preparing: SELECT hitCount FROM article WHERE id = ?
+2024-02-13 15:04:44 [DEBUG] c.e.d.r.A.getArticleHitCount - ==> Parameters: 2(Integer)
+2024-02-13 15:04:44 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT hitCount
+FROM article
+WHERE id = 2
+ {executed in 0 msec}
+2024-02-13 15:04:44 [INFO ] jdbc.resultsettable - 
+|---------|
+|hitcount |
+|---------|
+|6        |
+|---------|
+
+2024-02-13 15:04:44 [DEBUG] c.e.d.r.A.getArticleHitCount - <==      Total: 1
+2024-02-13 15:04:44 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3ead1cf2]
+2024-02-13 15:04:46 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:46 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16c9ac6f] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:46 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:46 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1121742180 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:46 [DEBUG] c.e.d.r.A.increaseHitCount - ==>  Preparing: UPDATE article SET hitCount = hitCount + 1 WHERE id = ?
+2024-02-13 15:04:46 [DEBUG] c.e.d.r.A.increaseHitCount - ==> Parameters: 2(Integer)
+2024-02-13 15:04:46 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. UPDATE article
+SET hitCount = hitCount + 1
+WHERE id = 2
+ {executed in 2 msec}
+2024-02-13 15:04:46 [DEBUG] c.e.d.r.A.increaseHitCount - <==    Updates: 1
+2024-02-13 15:04:46 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16c9ac6f]
+2024-02-13 15:04:46 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:04:46 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@414ed169] was not registered for synchronization because synchronization is not active
+2024-02-13 15:04:46 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:04:46 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1616388969 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:04:46 [DEBUG] c.e.d.r.A.getArticleHitCount - ==>  Preparing: SELECT hitCount FROM article WHERE id = ?
+2024-02-13 15:04:46 [DEBUG] c.e.d.r.A.getArticleHitCount - ==> Parameters: 2(Integer)
+2024-02-13 15:04:46 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT hitCount
+FROM article
+WHERE id = 2
+ {executed in 0 msec}
+2024-02-13 15:04:46 [INFO ] jdbc.resultsettable - 
+|---------|
+|hitcount |
+|---------|
+|7        |
+|---------|
+
+2024-02-13 15:04:46 [DEBUG] c.e.d.r.A.getArticleHitCount - <==      Total: 1
+2024-02-13 15:04:46 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@414ed169]
+2024-02-13 15:05:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:05:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:05:40 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:05:40 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:06:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:06:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:06:40 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:06:40 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:07:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:07:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:07:40 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:07:40 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:08:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:08:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:08:40 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:08:40 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:09:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:09:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:09:40 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:09:40 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:10:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:10:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:10:40 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:10:40 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:10:50 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:10:50 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@465ea8d] was not registered for synchronization because synchronization is not active
+2024-02-13 15:10:50 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:10:50 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1219603989 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:10:50 [DEBUG] c.e.d.r.BoardRepository.getBoardById - ==>  Preparing: SELECT * FROM board WHERE id = ? AND delStatus = 0;
+2024-02-13 15:10:50 [DEBUG] c.e.d.r.BoardRepository.getBoardById - ==> Parameters: 2(Integer)
+2024-02-13 15:10:50 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT *
+	FROM board
+	WHERE id = 2
+	AND delStatus = 0;
+ {executed in 0 msec}
+2024-02-13 15:10:50 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|-----|-----|----------|--------|
+|id |regdate             |updatedate          |code |name |delstatus |deldate |
+|---|--------------------|--------------------|-----|-----|----------|--------|
+|2  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |FREE |자유   |false     |null    |
+|---|--------------------|--------------------|-----|-----|----------|--------|
+
+2024-02-13 15:10:50 [DEBUG] c.e.d.r.BoardRepository.getBoardById - <==      Total: 1
+2024-02-13 15:10:50 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@465ea8d]
+2024-02-13 15:10:50 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:10:50 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@195014dd] was not registered for synchronization because synchronization is not active
+2024-02-13 15:10:50 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:10:50 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@876087249 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:10:50 [DEBUG] c.e.d.r.A.getArticlesCount - ==>  Preparing: SELECT COUNT(*) AS cnt FROM article AS A WHERE 1 AND boardId = ? ORDER BY id DESC
+2024-02-13 15:10:50 [DEBUG] c.e.d.r.A.getArticlesCount - ==> Parameters: 2(Integer)
+2024-02-13 15:10:50 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT COUNT(*) AS cnt
+FROM article AS A
+WHERE 1
+
+	AND boardId = 2
+
+ORDER BY id DESC
+ {executed in 0 msec}
+2024-02-13 15:10:50 [INFO ] jdbc.resultsettable - 
+|----|
+|cnt |
+|----|
+|1   |
+|----|
+
+2024-02-13 15:10:50 [DEBUG] c.e.d.r.A.getArticlesCount - <==      Total: 1
+2024-02-13 15:10:50 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@195014dd]
+2024-02-13 15:10:50 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:10:50 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16dea08] was not registered for synchronization because synchronization is not active
+2024-02-13 15:10:50 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:10:50 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1167164002 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:10:50 [DEBUG] c.e.d.r.A.getForPrintArticles - ==>  Preparing: SELECT A.*, M.nickname AS extra__writer FROM article AS A INNER JOIN `member` AS M ON A.memberId = M.id WHERE 1 AND A.boardId = ? ORDER BY A.id DESC LIMIT ?, ?
+2024-02-13 15:10:50 [DEBUG] c.e.d.r.A.getForPrintArticles - ==> Parameters: 2(Integer), 0(Integer), 10(Integer)
+2024-02-13 15:10:50 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT A.*, M.nickname AS extra__writer
+FROM article AS A
+INNER JOIN `member` AS M
+ON A.memberId = M.id
+WHERE 1
+
+	AND A.boardId = 2
+
+ORDER BY A.id DESC
+
+	LIMIT 0, 10
+ {executed in 6 msec}
+2024-02-13 15:10:50 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|id |regdate             |updatedate          |memberid |boardid |title |body |hitcount |extra__writer |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|3  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |3        |2       |제목3   |내용3  |1        |회원2           |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+
+2024-02-13 15:10:50 [DEBUG] c.e.d.r.A.getForPrintArticles - <==      Total: 1
+2024-02-13 15:10:50 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16dea08]
+2024-02-13 15:10:51 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:10:51 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c9c64f4] was not registered for synchronization because synchronization is not active
+2024-02-13 15:10:51 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:10:51 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1733487480 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:10:51 [DEBUG] c.e.d.r.BoardRepository.getBoardById - ==>  Preparing: SELECT * FROM board WHERE id = ? AND delStatus = 0;
+2024-02-13 15:10:51 [DEBUG] c.e.d.r.BoardRepository.getBoardById - ==> Parameters: 1(Integer)
+2024-02-13 15:10:51 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT *
+	FROM board
+	WHERE id = 1
+	AND delStatus = 0;
+ {executed in 0 msec}
+2024-02-13 15:10:51 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|-------|-----|----------|--------|
+|id |regdate             |updatedate          |code   |name |delstatus |deldate |
+|---|--------------------|--------------------|-------|-----|----------|--------|
+|1  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |NOTICE |공지사항 |false     |null    |
+|---|--------------------|--------------------|-------|-----|----------|--------|
+
+2024-02-13 15:10:51 [DEBUG] c.e.d.r.BoardRepository.getBoardById - <==      Total: 1
+2024-02-13 15:10:51 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c9c64f4]
+2024-02-13 15:10:51 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:10:51 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50466f1] was not registered for synchronization because synchronization is not active
+2024-02-13 15:10:51 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:10:51 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1094170259 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:10:51 [DEBUG] c.e.d.r.A.getArticlesCount - ==>  Preparing: SELECT COUNT(*) AS cnt FROM article AS A WHERE 1 AND boardId = ? ORDER BY id DESC
+2024-02-13 15:10:51 [DEBUG] c.e.d.r.A.getArticlesCount - ==> Parameters: 1(Integer)
+2024-02-13 15:10:51 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT COUNT(*) AS cnt
+FROM article AS A
+WHERE 1
+
+	AND boardId = 1
+
+ORDER BY id DESC
+ {executed in 0 msec}
+2024-02-13 15:10:51 [INFO ] jdbc.resultsettable - 
+|----|
+|cnt |
+|----|
+|2   |
+|----|
+
+2024-02-13 15:10:51 [DEBUG] c.e.d.r.A.getArticlesCount - <==      Total: 1
+2024-02-13 15:10:51 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50466f1]
+2024-02-13 15:10:51 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:10:51 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b9cbc9b] was not registered for synchronization because synchronization is not active
+2024-02-13 15:10:51 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:10:51 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@155205488 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:10:51 [DEBUG] c.e.d.r.A.getForPrintArticles - ==>  Preparing: SELECT A.*, M.nickname AS extra__writer FROM article AS A INNER JOIN `member` AS M ON A.memberId = M.id WHERE 1 AND A.boardId = ? ORDER BY A.id DESC LIMIT ?, ?
+2024-02-13 15:10:51 [DEBUG] c.e.d.r.A.getForPrintArticles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2024-02-13 15:10:51 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT A.*, M.nickname AS extra__writer
+FROM article AS A
+INNER JOIN `member` AS M
+ON A.memberId = M.id
+WHERE 1
+
+	AND A.boardId = 1
+
+ORDER BY A.id DESC
+
+	LIMIT 0, 10
+ {executed in 7 msec}
+2024-02-13 15:10:51 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|id |regdate             |updatedate          |memberid |boardid |title |body |hitcount |extra__writer |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|2  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목2   |내용2  |7        |회원1           |
+|1  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목1   |내용1  |2        |회원1           |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+
+2024-02-13 15:10:51 [DEBUG] c.e.d.r.A.getForPrintArticles - <==      Total: 2
+2024-02-13 15:10:51 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b9cbc9b]
+2024-02-13 15:10:53 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:10:53 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e145232] was not registered for synchronization because synchronization is not active
+2024-02-13 15:10:53 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:10:53 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1775303470 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:10:53 [DEBUG] c.e.d.r.A.getForPrintArticle - ==>  Preparing: SELECT A.*, M.nickname AS extra__writer FROM article AS A INNER JOIN `member` AS M ON A.memberId = M.id WHERE A.id = ?
+2024-02-13 15:10:53 [DEBUG] c.e.d.r.A.getForPrintArticle - ==> Parameters: 1(Integer)
+2024-02-13 15:10:53 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT A.*, M.nickname AS extra__writer
+FROM article AS A
+INNER JOIN `member` AS M
+ON A.memberId = M.id
+WHERE A.id = 1
+ {executed in 0 msec}
+2024-02-13 15:10:53 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|id |regdate             |updatedate          |memberid |boardid |title |body |hitcount |extra__writer |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|1  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목1   |내용1  |2        |회원1           |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+
+2024-02-13 15:10:53 [DEBUG] c.e.d.r.A.getForPrintArticle - <==      Total: 1
+2024-02-13 15:10:53 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e145232]
+2024-02-13 15:10:55 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:10:55 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@306763fa] was not registered for synchronization because synchronization is not active
+2024-02-13 15:10:55 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:10:55 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1606331062 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:10:55 [DEBUG] c.e.d.r.A.increaseHitCount - ==>  Preparing: UPDATE article SET hitCount = hitCount + 1 WHERE id = ?
+2024-02-13 15:10:55 [DEBUG] c.e.d.r.A.increaseHitCount - ==> Parameters: 1(Integer)
+2024-02-13 15:10:55 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. UPDATE article
+SET hitCount = hitCount + 1
+WHERE id = 1
+ {executed in 3 msec}
+2024-02-13 15:10:55 [DEBUG] c.e.d.r.A.increaseHitCount - <==    Updates: 1
+2024-02-13 15:10:55 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@306763fa]
+2024-02-13 15:10:55 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:10:55 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75d0bfd7] was not registered for synchronization because synchronization is not active
+2024-02-13 15:10:55 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:10:55 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1603354817 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:10:55 [DEBUG] c.e.d.r.A.getArticleHitCount - ==>  Preparing: SELECT hitCount FROM article WHERE id = ?
+2024-02-13 15:10:55 [DEBUG] c.e.d.r.A.getArticleHitCount - ==> Parameters: 1(Integer)
+2024-02-13 15:10:55 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT hitCount
+FROM article
+WHERE id = 1
+ {executed in 0 msec}
+2024-02-13 15:10:55 [INFO ] jdbc.resultsettable - 
+|---------|
+|hitcount |
+|---------|
+|3        |
+|---------|
+
+2024-02-13 15:10:55 [DEBUG] c.e.d.r.A.getArticleHitCount - <==      Total: 1
+2024-02-13 15:10:55 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75d0bfd7]
+2024-02-13 15:11:07 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:11:07 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cedf0fc] was not registered for synchronization because synchronization is not active
+2024-02-13 15:11:07 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:11:07 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1962808677 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:11:07 [DEBUG] c.e.d.r.A.getForPrintArticle - ==>  Preparing: SELECT A.*, M.nickname AS extra__writer FROM article AS A INNER JOIN `member` AS M ON A.memberId = M.id WHERE A.id = ?
+2024-02-13 15:11:07 [DEBUG] c.e.d.r.A.getForPrintArticle - ==> Parameters: 1(Integer)
+2024-02-13 15:11:07 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT A.*, M.nickname AS extra__writer
+FROM article AS A
+INNER JOIN `member` AS M
+ON A.memberId = M.id
+WHERE A.id = 1
+ {executed in 1 msec}
+2024-02-13 15:11:07 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|id |regdate             |updatedate          |memberid |boardid |title |body |hitcount |extra__writer |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|1  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목1   |내용1  |3        |회원1           |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+
+2024-02-13 15:11:07 [DEBUG] c.e.d.r.A.getForPrintArticle - <==      Total: 1
+2024-02-13 15:11:07 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cedf0fc]
+2024-02-13 15:11:09 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:11:09 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10f33aa2] was not registered for synchronization because synchronization is not active
+2024-02-13 15:11:09 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:11:09 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1111720624 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:11:09 [DEBUG] c.e.d.r.A.increaseHitCount - ==>  Preparing: UPDATE article SET hitCount = hitCount + 1 WHERE id = ?
+2024-02-13 15:11:09 [DEBUG] c.e.d.r.A.increaseHitCount - ==> Parameters: 1(Integer)
+2024-02-13 15:11:09 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. UPDATE article
+SET hitCount = hitCount + 1
+WHERE id = 1
+ {executed in 4 msec}
+2024-02-13 15:11:09 [DEBUG] c.e.d.r.A.increaseHitCount - <==    Updates: 1
+2024-02-13 15:11:09 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10f33aa2]
+2024-02-13 15:11:09 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:11:09 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1a73feb7] was not registered for synchronization because synchronization is not active
+2024-02-13 15:11:09 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:11:09 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1148954955 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:11:09 [DEBUG] c.e.d.r.A.getArticleHitCount - ==>  Preparing: SELECT hitCount FROM article WHERE id = ?
+2024-02-13 15:11:09 [DEBUG] c.e.d.r.A.getArticleHitCount - ==> Parameters: 1(Integer)
+2024-02-13 15:11:09 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT hitCount
+FROM article
+WHERE id = 1
+ {executed in 1 msec}
+2024-02-13 15:11:09 [INFO ] jdbc.resultsettable - 
+|---------|
+|hitcount |
+|---------|
+|4        |
+|---------|
+
+2024-02-13 15:11:09 [DEBUG] c.e.d.r.A.getArticleHitCount - <==      Total: 1
+2024-02-13 15:11:09 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1a73feb7]
+2024-02-13 15:11:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:11:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:11:40 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:11:40 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:12:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:12:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:12:40 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:12:40 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:13:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:13:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:13:40 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:13:40 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:14:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:14:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:14:40 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:14:40 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:15:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:15:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:15:40 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:15:40 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:16:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:16:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:16:40 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:16:40 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:17:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:17:10 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:17:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:17:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:18:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:18:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:18:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:18:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:19:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:19:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:19:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:19:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:20:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:20:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:20:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:20:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:21:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:21:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:21:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:21:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:22:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:22:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:22:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:22:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:23:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:23:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:23:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:23:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:24:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:24:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:24:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:24:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:25:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:25:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:25:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:25:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:26:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:26:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:26:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:26:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:27:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:27:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:27:31 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:27:31 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fbde327] was not registered for synchronization because synchronization is not active
+2024-02-13 15:27:31 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:27:31 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@438357795 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:27:31 [DEBUG] c.e.d.r.BoardRepository.getBoardById - ==>  Preparing: SELECT * FROM board WHERE id = ? AND delStatus = 0;
+2024-02-13 15:27:31 [DEBUG] c.e.d.r.BoardRepository.getBoardById - ==> Parameters: 1(Integer)
+2024-02-13 15:27:31 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT *
+	FROM board
+	WHERE id = 1
+	AND delStatus = 0;
+ {executed in 1 msec}
+2024-02-13 15:27:31 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|-------|-----|----------|--------|
+|id |regdate             |updatedate          |code   |name |delstatus |deldate |
+|---|--------------------|--------------------|-------|-----|----------|--------|
+|1  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |NOTICE |공지사항 |false     |null    |
+|---|--------------------|--------------------|-------|-----|----------|--------|
+
+2024-02-13 15:27:31 [DEBUG] c.e.d.r.BoardRepository.getBoardById - <==      Total: 1
+2024-02-13 15:27:31 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fbde327]
+2024-02-13 15:27:31 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:27:31 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1afa4ce3] was not registered for synchronization because synchronization is not active
+2024-02-13 15:27:31 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:27:31 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1783968203 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:27:31 [DEBUG] c.e.d.r.A.getArticlesCount - ==>  Preparing: SELECT COUNT(*) AS cnt FROM article AS A WHERE 1 AND boardId = ? ORDER BY id DESC
+2024-02-13 15:27:31 [DEBUG] c.e.d.r.A.getArticlesCount - ==> Parameters: 1(Integer)
+2024-02-13 15:27:31 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT COUNT(*) AS cnt
+FROM article AS A
+WHERE 1
+
+	AND boardId = 1
+
+ORDER BY id DESC
+ {executed in 0 msec}
+2024-02-13 15:27:31 [INFO ] jdbc.resultsettable - 
+|----|
+|cnt |
+|----|
+|2   |
+|----|
+
+2024-02-13 15:27:31 [DEBUG] c.e.d.r.A.getArticlesCount - <==      Total: 1
+2024-02-13 15:27:31 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1afa4ce3]
+2024-02-13 15:27:31 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:27:31 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69e8d2da] was not registered for synchronization because synchronization is not active
+2024-02-13 15:27:31 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:27:31 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@127475615 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:27:31 [DEBUG] c.e.d.r.A.getForPrintArticles - ==>  Preparing: SELECT A.*, M.nickname AS extra__writer FROM article AS A INNER JOIN `member` AS M ON A.memberId = M.id WHERE 1 AND A.boardId = ? ORDER BY A.id DESC LIMIT ?, ?
+2024-02-13 15:27:31 [DEBUG] c.e.d.r.A.getForPrintArticles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2024-02-13 15:27:31 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT A.*, M.nickname AS extra__writer
+FROM article AS A
+INNER JOIN `member` AS M
+ON A.memberId = M.id
+WHERE 1
+
+	AND A.boardId = 1
+
+ORDER BY A.id DESC
+
+	LIMIT 0, 10
+ {executed in 8 msec}
+2024-02-13 15:27:31 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|id |regdate             |updatedate          |memberid |boardid |title |body |hitcount |extra__writer |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|2  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목2   |내용2  |7        |회원1           |
+|1  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목1   |내용1  |4        |회원1           |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+
+2024-02-13 15:27:31 [DEBUG] c.e.d.r.A.getForPrintArticles - <==      Total: 2
+2024-02-13 15:27:31 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69e8d2da]
+2024-02-13 15:27:33 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:27:33 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6951da21] was not registered for synchronization because synchronization is not active
+2024-02-13 15:27:33 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:27:33 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1439629750 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:27:33 [DEBUG] c.e.d.r.A.getForPrintArticle - ==>  Preparing: SELECT A.*, M.nickname AS extra__writer FROM article AS A INNER JOIN `member` AS M ON A.memberId = M.id WHERE A.id = ?
+2024-02-13 15:27:33 [DEBUG] c.e.d.r.A.getForPrintArticle - ==> Parameters: 1(Integer)
+2024-02-13 15:27:33 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT A.*, M.nickname AS extra__writer
+FROM article AS A
+INNER JOIN `member` AS M
+ON A.memberId = M.id
+WHERE A.id = 1
+ {executed in 0 msec}
+2024-02-13 15:27:33 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|id |regdate             |updatedate          |memberid |boardid |title |body |hitcount |extra__writer |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|1  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목1   |내용1  |4        |회원1           |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+
+2024-02-13 15:27:33 [DEBUG] c.e.d.r.A.getForPrintArticle - <==      Total: 1
+2024-02-13 15:27:33 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6951da21]
+2024-02-13 15:27:35 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:27:35 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cc5d29d] was not registered for synchronization because synchronization is not active
+2024-02-13 15:27:35 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:27:35 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@806793332 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:27:35 [DEBUG] c.e.d.r.A.increaseHitCount - ==>  Preparing: UPDATE article SET hitCount = hitCount + 1 WHERE id = ?
+2024-02-13 15:27:35 [DEBUG] c.e.d.r.A.increaseHitCount - ==> Parameters: 1(Integer)
+2024-02-13 15:27:35 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. UPDATE article
+SET hitCount = hitCount + 1
+WHERE id = 1
+ {executed in 3 msec}
+2024-02-13 15:27:35 [DEBUG] c.e.d.r.A.increaseHitCount - <==    Updates: 1
+2024-02-13 15:27:35 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cc5d29d]
+2024-02-13 15:27:35 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:27:35 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78c3fe2a] was not registered for synchronization because synchronization is not active
+2024-02-13 15:27:35 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:27:35 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2102617174 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:27:35 [DEBUG] c.e.d.r.A.getArticleHitCount - ==>  Preparing: SELECT hitCount FROM article WHERE id = ?
+2024-02-13 15:27:35 [DEBUG] c.e.d.r.A.getArticleHitCount - ==> Parameters: 1(Integer)
+2024-02-13 15:27:35 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT hitCount
+FROM article
+WHERE id = 1
+ {executed in 0 msec}
+2024-02-13 15:27:35 [INFO ] jdbc.resultsettable - 
+|---------|
+|hitcount |
+|---------|
+|5        |
+|---------|
+
+2024-02-13 15:27:35 [DEBUG] c.e.d.r.A.getArticleHitCount - <==      Total: 1
+2024-02-13 15:27:35 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78c3fe2a]
+2024-02-13 15:27:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:27:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:27:49 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:27:49 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1576a5cd] was not registered for synchronization because synchronization is not active
+2024-02-13 15:27:49 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:27:49 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@846279218 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:27:49 [DEBUG] c.e.d.r.M.getMemberByLoginId - ==>  Preparing: SELECT * FROM `member` WHERE loginId = ?
+2024-02-13 15:27:49 [DEBUG] c.e.d.r.M.getMemberByLoginId - ==> Parameters: admin(String)
+2024-02-13 15:27:49 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT *
+FROM `member`
+WHERE loginId = 'admin'
+ {executed in 1 msec}
+2024-02-13 15:27:49 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|--------|--------|----------|-----|---------|-------------|---------------|----------|--------|
+|id |regdate             |updatedate          |loginid |loginpw |authlevel |name |nickname |cellphonenum |email          |delstatus |deldate |
+|---|--------------------|--------------------|--------|--------|----------|-----|---------|-------------|---------------|----------|--------|
+|1  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |admin   |admin   |7         |관리자  |관리자      |01012341234  |abcd@gmail.com |false     |null    |
+|---|--------------------|--------------------|--------|--------|----------|-----|---------|-------------|---------------|----------|--------|
+
+2024-02-13 15:27:49 [DEBUG] c.e.d.r.M.getMemberByLoginId - <==      Total: 1
+2024-02-13 15:27:49 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1576a5cd]
+2024-02-13 15:28:01 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:28:01 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@691f624f] was not registered for synchronization because synchronization is not active
+2024-02-13 15:28:01 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:28:01 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@827420145 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:28:01 [DEBUG] c.e.d.r.BoardRepository.getBoardById - ==>  Preparing: SELECT * FROM board WHERE id = ? AND delStatus = 0;
+2024-02-13 15:28:01 [DEBUG] c.e.d.r.BoardRepository.getBoardById - ==> Parameters: 1(Integer)
+2024-02-13 15:28:01 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT *
+	FROM board
+	WHERE id = 1
+	AND delStatus = 0;
+ {executed in 0 msec}
+2024-02-13 15:28:01 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|-------|-----|----------|--------|
+|id |regdate             |updatedate          |code   |name |delstatus |deldate |
+|---|--------------------|--------------------|-------|-----|----------|--------|
+|1  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |NOTICE |공지사항 |false     |null    |
+|---|--------------------|--------------------|-------|-----|----------|--------|
+
+2024-02-13 15:28:01 [DEBUG] c.e.d.r.BoardRepository.getBoardById - <==      Total: 1
+2024-02-13 15:28:01 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@691f624f]
+2024-02-13 15:28:01 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:28:01 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78c6a3ec] was not registered for synchronization because synchronization is not active
+2024-02-13 15:28:01 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:28:01 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@55445828 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:28:01 [DEBUG] c.e.d.r.A.getArticlesCount - ==>  Preparing: SELECT COUNT(*) AS cnt FROM article AS A WHERE 1 AND boardId = ? ORDER BY id DESC
+2024-02-13 15:28:01 [DEBUG] c.e.d.r.A.getArticlesCount - ==> Parameters: 1(Integer)
+2024-02-13 15:28:01 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT COUNT(*) AS cnt
+FROM article AS A
+WHERE 1
+
+	AND boardId = 1
+
+ORDER BY id DESC
+ {executed in 1 msec}
+2024-02-13 15:28:01 [INFO ] jdbc.resultsettable - 
+|----|
+|cnt |
+|----|
+|2   |
+|----|
+
+2024-02-13 15:28:01 [DEBUG] c.e.d.r.A.getArticlesCount - <==      Total: 1
+2024-02-13 15:28:01 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78c6a3ec]
+2024-02-13 15:28:01 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:28:01 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@73d00085] was not registered for synchronization because synchronization is not active
+2024-02-13 15:28:01 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:28:01 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1861179989 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:28:01 [DEBUG] c.e.d.r.A.getForPrintArticles - ==>  Preparing: SELECT A.*, M.nickname AS extra__writer FROM article AS A INNER JOIN `member` AS M ON A.memberId = M.id WHERE 1 AND A.boardId = ? ORDER BY A.id DESC LIMIT ?, ?
+2024-02-13 15:28:01 [DEBUG] c.e.d.r.A.getForPrintArticles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2024-02-13 15:28:01 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT A.*, M.nickname AS extra__writer
+FROM article AS A
+INNER JOIN `member` AS M
+ON A.memberId = M.id
+WHERE 1
+
+	AND A.boardId = 1
+
+ORDER BY A.id DESC
+
+	LIMIT 0, 10
+ {executed in 7 msec}
+2024-02-13 15:28:01 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|id |regdate             |updatedate          |memberid |boardid |title |body |hitcount |extra__writer |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|2  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목2   |내용2  |7        |회원1           |
+|1  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목1   |내용1  |5        |회원1           |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+
+2024-02-13 15:28:01 [DEBUG] c.e.d.r.A.getForPrintArticles - <==      Total: 2
+2024-02-13 15:28:01 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@73d00085]
+2024-02-13 15:28:03 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:28:03 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b503018] was not registered for synchronization because synchronization is not active
+2024-02-13 15:28:03 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:28:03 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@712664034 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:28:03 [DEBUG] c.e.d.r.A.getForPrintArticle - ==>  Preparing: SELECT A.*, M.nickname AS extra__writer FROM article AS A INNER JOIN `member` AS M ON A.memberId = M.id WHERE A.id = ?
+2024-02-13 15:28:03 [DEBUG] c.e.d.r.A.getForPrintArticle - ==> Parameters: 2(Integer)
+2024-02-13 15:28:03 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT A.*, M.nickname AS extra__writer
+FROM article AS A
+INNER JOIN `member` AS M
+ON A.memberId = M.id
+WHERE A.id = 2
+ {executed in 0 msec}
+2024-02-13 15:28:03 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|id |regdate             |updatedate          |memberid |boardid |title |body |hitcount |extra__writer |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|2  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목2   |내용2  |7        |회원1           |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+
+2024-02-13 15:28:03 [DEBUG] c.e.d.r.A.getForPrintArticle - <==      Total: 1
+2024-02-13 15:28:03 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b503018]
+2024-02-13 15:28:05 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:28:05 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d051fb6] was not registered for synchronization because synchronization is not active
+2024-02-13 15:28:05 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:28:05 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@140609478 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:28:05 [DEBUG] c.e.d.r.A.getForPrintArticle - ==>  Preparing: SELECT A.*, M.nickname AS extra__writer FROM article AS A INNER JOIN `member` AS M ON A.memberId = M.id WHERE A.id = ?
+2024-02-13 15:28:05 [DEBUG] c.e.d.r.A.getForPrintArticle - ==> Parameters: 1(Integer)
+2024-02-13 15:28:05 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT A.*, M.nickname AS extra__writer
+FROM article AS A
+INNER JOIN `member` AS M
+ON A.memberId = M.id
+WHERE A.id = 1
+ {executed in 1 msec}
+2024-02-13 15:28:05 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|id |regdate             |updatedate          |memberid |boardid |title |body |hitcount |extra__writer |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|1  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목1   |내용1  |5        |회원1           |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+
+2024-02-13 15:28:05 [DEBUG] c.e.d.r.A.getForPrintArticle - <==      Total: 1
+2024-02-13 15:28:05 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d051fb6]
+2024-02-13 15:28:09 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:28:09 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12f1f488] was not registered for synchronization because synchronization is not active
+2024-02-13 15:28:09 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:28:09 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1260684595 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:28:09 [DEBUG] c.e.d.r.BoardRepository.getBoardById - ==>  Preparing: SELECT * FROM board WHERE id = ? AND delStatus = 0;
+2024-02-13 15:28:09 [DEBUG] c.e.d.r.BoardRepository.getBoardById - ==> Parameters: 2(Integer)
+2024-02-13 15:28:09 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT *
+	FROM board
+	WHERE id = 2
+	AND delStatus = 0;
+ {executed in 0 msec}
+2024-02-13 15:28:09 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|-----|-----|----------|--------|
+|id |regdate             |updatedate          |code |name |delstatus |deldate |
+|---|--------------------|--------------------|-----|-----|----------|--------|
+|2  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |FREE |자유   |false     |null    |
+|---|--------------------|--------------------|-----|-----|----------|--------|
+
+2024-02-13 15:28:09 [DEBUG] c.e.d.r.BoardRepository.getBoardById - <==      Total: 1
+2024-02-13 15:28:09 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12f1f488]
+2024-02-13 15:28:09 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:28:09 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f6184ec] was not registered for synchronization because synchronization is not active
+2024-02-13 15:28:09 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:28:09 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@951897683 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:28:09 [DEBUG] c.e.d.r.A.getArticlesCount - ==>  Preparing: SELECT COUNT(*) AS cnt FROM article AS A WHERE 1 AND boardId = ? ORDER BY id DESC
+2024-02-13 15:28:09 [DEBUG] c.e.d.r.A.getArticlesCount - ==> Parameters: 2(Integer)
+2024-02-13 15:28:09 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT COUNT(*) AS cnt
+FROM article AS A
+WHERE 1
+
+	AND boardId = 2
+
+ORDER BY id DESC
+ {executed in 0 msec}
+2024-02-13 15:28:09 [INFO ] jdbc.resultsettable - 
+|----|
+|cnt |
+|----|
+|1   |
+|----|
+
+2024-02-13 15:28:09 [DEBUG] c.e.d.r.A.getArticlesCount - <==      Total: 1
+2024-02-13 15:28:09 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f6184ec]
+2024-02-13 15:28:09 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:28:09 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@87b5074] was not registered for synchronization because synchronization is not active
+2024-02-13 15:28:09 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:28:09 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@301216159 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:28:09 [DEBUG] c.e.d.r.A.getForPrintArticles - ==>  Preparing: SELECT A.*, M.nickname AS extra__writer FROM article AS A INNER JOIN `member` AS M ON A.memberId = M.id WHERE 1 AND A.boardId = ? ORDER BY A.id DESC LIMIT ?, ?
+2024-02-13 15:28:09 [DEBUG] c.e.d.r.A.getForPrintArticles - ==> Parameters: 2(Integer), 0(Integer), 10(Integer)
+2024-02-13 15:28:09 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT A.*, M.nickname AS extra__writer
+FROM article AS A
+INNER JOIN `member` AS M
+ON A.memberId = M.id
+WHERE 1
+
+	AND A.boardId = 2
+
+ORDER BY A.id DESC
+
+	LIMIT 0, 10
+ {executed in 7 msec}
+2024-02-13 15:28:09 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|id |regdate             |updatedate          |memberid |boardid |title |body |hitcount |extra__writer |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|3  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |3        |2       |제목3   |내용3  |1        |회원2           |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+
+2024-02-13 15:28:09 [DEBUG] c.e.d.r.A.getForPrintArticles - <==      Total: 1
+2024-02-13 15:28:09 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@87b5074]
+2024-02-13 15:28:10 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:28:10 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42c9faa6] was not registered for synchronization because synchronization is not active
+2024-02-13 15:28:10 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:28:10 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@383105079 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:28:10 [DEBUG] c.e.d.r.BoardRepository.getBoardById - ==>  Preparing: SELECT * FROM board WHERE id = ? AND delStatus = 0;
+2024-02-13 15:28:10 [DEBUG] c.e.d.r.BoardRepository.getBoardById - ==> Parameters: 3(Integer)
+2024-02-13 15:28:10 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT *
+	FROM board
+	WHERE id = 3
+	AND delStatus = 0;
+ {executed in 0 msec}
+2024-02-13 15:28:10 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|-----|-----|----------|--------|
+|id |regdate             |updatedate          |code |name |delstatus |deldate |
+|---|--------------------|--------------------|-----|-----|----------|--------|
+|3  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |QnA  |질의응답 |false     |null    |
+|---|--------------------|--------------------|-----|-----|----------|--------|
+
+2024-02-13 15:28:10 [DEBUG] c.e.d.r.BoardRepository.getBoardById - <==      Total: 1
+2024-02-13 15:28:10 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42c9faa6]
+2024-02-13 15:28:10 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:28:10 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1871b39d] was not registered for synchronization because synchronization is not active
+2024-02-13 15:28:10 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:28:10 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1842334647 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:28:10 [DEBUG] c.e.d.r.A.getArticlesCount - ==>  Preparing: SELECT COUNT(*) AS cnt FROM article AS A WHERE 1 AND boardId = ? ORDER BY id DESC
+2024-02-13 15:28:10 [DEBUG] c.e.d.r.A.getArticlesCount - ==> Parameters: 3(Integer)
+2024-02-13 15:28:10 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT COUNT(*) AS cnt
+FROM article AS A
+WHERE 1
+
+	AND boardId = 3
+
+ORDER BY id DESC
+ {executed in 1 msec}
+2024-02-13 15:28:10 [INFO ] jdbc.resultsettable - 
+|----|
+|cnt |
+|----|
+|1   |
+|----|
+
+2024-02-13 15:28:10 [DEBUG] c.e.d.r.A.getArticlesCount - <==      Total: 1
+2024-02-13 15:28:10 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1871b39d]
+2024-02-13 15:28:10 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:28:10 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ed449c] was not registered for synchronization because synchronization is not active
+2024-02-13 15:28:10 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:28:10 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@932101330 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:28:10 [DEBUG] c.e.d.r.A.getForPrintArticles - ==>  Preparing: SELECT A.*, M.nickname AS extra__writer FROM article AS A INNER JOIN `member` AS M ON A.memberId = M.id WHERE 1 AND A.boardId = ? ORDER BY A.id DESC LIMIT ?, ?
+2024-02-13 15:28:10 [DEBUG] c.e.d.r.A.getForPrintArticles - ==> Parameters: 3(Integer), 0(Integer), 10(Integer)
+2024-02-13 15:28:10 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT A.*, M.nickname AS extra__writer
+FROM article AS A
+INNER JOIN `member` AS M
+ON A.memberId = M.id
+WHERE 1
+
+	AND A.boardId = 3
+
+ORDER BY A.id DESC
+
+	LIMIT 0, 10
+ {executed in 7 msec}
+2024-02-13 15:28:10 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|id |regdate             |updatedate          |memberid |boardid |title |body |hitcount |extra__writer |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|4  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |3        |3       |제목4   |내용4  |0        |회원2           |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+
+2024-02-13 15:28:10 [DEBUG] c.e.d.r.A.getForPrintArticles - <==      Total: 1
+2024-02-13 15:28:10 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ed449c]
+2024-02-13 15:28:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:28:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:28:13 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:28:13 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c098b3c] was not registered for synchronization because synchronization is not active
+2024-02-13 15:28:13 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:28:13 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1239815387 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:28:13 [DEBUG] c.e.d.r.A.getForPrintArticle - ==>  Preparing: SELECT A.*, M.nickname AS extra__writer FROM article AS A INNER JOIN `member` AS M ON A.memberId = M.id WHERE A.id = ?
+2024-02-13 15:28:13 [DEBUG] c.e.d.r.A.getForPrintArticle - ==> Parameters: 4(Integer)
+2024-02-13 15:28:13 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT A.*, M.nickname AS extra__writer
+FROM article AS A
+INNER JOIN `member` AS M
+ON A.memberId = M.id
+WHERE A.id = 4
+ {executed in 0 msec}
+2024-02-13 15:28:13 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|id |regdate             |updatedate          |memberid |boardid |title |body |hitcount |extra__writer |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|4  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |3        |3       |제목4   |내용4  |0        |회원2           |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+
+2024-02-13 15:28:13 [DEBUG] c.e.d.r.A.getForPrintArticle - <==      Total: 1
+2024-02-13 15:28:13 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c098b3c]
+2024-02-13 15:28:15 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:28:15 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4bd1522] was not registered for synchronization because synchronization is not active
+2024-02-13 15:28:15 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:28:15 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1080834004 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:28:15 [DEBUG] c.e.d.r.A.increaseHitCount - ==>  Preparing: UPDATE article SET hitCount = hitCount + 1 WHERE id = ?
+2024-02-13 15:28:15 [DEBUG] c.e.d.r.A.increaseHitCount - ==> Parameters: 4(Integer)
+2024-02-13 15:28:15 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. UPDATE article
+SET hitCount = hitCount + 1
+WHERE id = 4
+ {executed in 2 msec}
+2024-02-13 15:28:15 [DEBUG] c.e.d.r.A.increaseHitCount - <==    Updates: 1
+2024-02-13 15:28:15 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4bd1522]
+2024-02-13 15:28:15 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:28:15 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16d78321] was not registered for synchronization because synchronization is not active
+2024-02-13 15:28:15 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:28:15 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@925156536 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:28:15 [DEBUG] c.e.d.r.A.getArticleHitCount - ==>  Preparing: SELECT hitCount FROM article WHERE id = ?
+2024-02-13 15:28:15 [DEBUG] c.e.d.r.A.getArticleHitCount - ==> Parameters: 4(Integer)
+2024-02-13 15:28:15 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT hitCount
+FROM article
+WHERE id = 4
+ {executed in 1 msec}
+2024-02-13 15:28:15 [INFO ] jdbc.resultsettable - 
+|---------|
+|hitcount |
+|---------|
+|1        |
+|---------|
+
+2024-02-13 15:28:15 [DEBUG] c.e.d.r.A.getArticleHitCount - <==      Total: 1
+2024-02-13 15:28:15 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16d78321]
+2024-02-13 15:28:21 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:28:21 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@25c8a2cb] was not registered for synchronization because synchronization is not active
+2024-02-13 15:28:21 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:28:21 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1269133492 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:28:21 [DEBUG] c.e.d.r.A.getForPrintArticle - ==>  Preparing: SELECT A.*, M.nickname AS extra__writer FROM article AS A INNER JOIN `member` AS M ON A.memberId = M.id WHERE A.id = ?
+2024-02-13 15:28:21 [DEBUG] c.e.d.r.A.getForPrintArticle - ==> Parameters: 4(Integer)
+2024-02-13 15:28:21 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT A.*, M.nickname AS extra__writer
+FROM article AS A
+INNER JOIN `member` AS M
+ON A.memberId = M.id
+WHERE A.id = 4
+ {executed in 0 msec}
+2024-02-13 15:28:21 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|id |regdate             |updatedate          |memberid |boardid |title |body |hitcount |extra__writer |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|4  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |3        |3       |제목4   |내용4  |1        |회원2           |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+
+2024-02-13 15:28:21 [DEBUG] c.e.d.r.A.getForPrintArticle - <==      Total: 1
+2024-02-13 15:28:21 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@25c8a2cb]
+2024-02-13 15:28:23 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:28:23 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70039812] was not registered for synchronization because synchronization is not active
+2024-02-13 15:28:23 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:28:23 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@312747399 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:28:23 [DEBUG] c.e.d.r.A.increaseHitCount - ==>  Preparing: UPDATE article SET hitCount = hitCount + 1 WHERE id = ?
+2024-02-13 15:28:23 [DEBUG] c.e.d.r.A.increaseHitCount - ==> Parameters: 4(Integer)
+2024-02-13 15:28:23 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. UPDATE article
+SET hitCount = hitCount + 1
+WHERE id = 4
+ {executed in 4 msec}
+2024-02-13 15:28:23 [DEBUG] c.e.d.r.A.increaseHitCount - <==    Updates: 1
+2024-02-13 15:28:23 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70039812]
+2024-02-13 15:28:23 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:28:23 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b752d3d] was not registered for synchronization because synchronization is not active
+2024-02-13 15:28:23 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:28:23 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1221502921 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:28:23 [DEBUG] c.e.d.r.A.getArticleHitCount - ==>  Preparing: SELECT hitCount FROM article WHERE id = ?
+2024-02-13 15:28:23 [DEBUG] c.e.d.r.A.getArticleHitCount - ==> Parameters: 4(Integer)
+2024-02-13 15:28:23 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT hitCount
+FROM article
+WHERE id = 4
+ {executed in 0 msec}
+2024-02-13 15:28:23 [INFO ] jdbc.resultsettable - 
+|---------|
+|hitcount |
+|---------|
+|2        |
+|---------|
+
+2024-02-13 15:28:23 [DEBUG] c.e.d.r.A.getArticleHitCount - <==      Total: 1
+2024-02-13 15:28:23 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b752d3d]
+2024-02-13 15:28:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:28:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:29:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:29:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:29:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:29:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:30:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:30:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:30:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:30:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:31:04 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:31:04 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d062cd6] was not registered for synchronization because synchronization is not active
+2024-02-13 15:31:04 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:31:04 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@728848811 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:31:04 [DEBUG] c.e.d.r.BoardRepository.getBoardById - ==>  Preparing: SELECT * FROM board WHERE id = ? AND delStatus = 0;
+2024-02-13 15:31:04 [DEBUG] c.e.d.r.BoardRepository.getBoardById - ==> Parameters: 1(Integer)
+2024-02-13 15:31:04 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT *
+	FROM board
+	WHERE id = 1
+	AND delStatus = 0;
+ {executed in 0 msec}
+2024-02-13 15:31:04 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|-------|-----|----------|--------|
+|id |regdate             |updatedate          |code   |name |delstatus |deldate |
+|---|--------------------|--------------------|-------|-----|----------|--------|
+|1  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |NOTICE |공지사항 |false     |null    |
+|---|--------------------|--------------------|-------|-----|----------|--------|
+
+2024-02-13 15:31:04 [DEBUG] c.e.d.r.BoardRepository.getBoardById - <==      Total: 1
+2024-02-13 15:31:04 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d062cd6]
+2024-02-13 15:31:04 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:31:04 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@640c3975] was not registered for synchronization because synchronization is not active
+2024-02-13 15:31:04 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:31:04 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1774064756 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:31:04 [DEBUG] c.e.d.r.A.getArticlesCount - ==>  Preparing: SELECT COUNT(*) AS cnt FROM article AS A WHERE 1 AND boardId = ? ORDER BY id DESC
+2024-02-13 15:31:04 [DEBUG] c.e.d.r.A.getArticlesCount - ==> Parameters: 1(Integer)
+2024-02-13 15:31:04 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT COUNT(*) AS cnt
+FROM article AS A
+WHERE 1
+
+	AND boardId = 1
+
+ORDER BY id DESC
+ {executed in 0 msec}
+2024-02-13 15:31:04 [INFO ] jdbc.resultsettable - 
+|----|
+|cnt |
+|----|
+|2   |
+|----|
+
+2024-02-13 15:31:04 [DEBUG] c.e.d.r.A.getArticlesCount - <==      Total: 1
+2024-02-13 15:31:04 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@640c3975]
+2024-02-13 15:31:04 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:31:04 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23ea5741] was not registered for synchronization because synchronization is not active
+2024-02-13 15:31:04 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:31:04 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@849519584 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:31:04 [DEBUG] c.e.d.r.A.getForPrintArticles - ==>  Preparing: SELECT A.*, M.nickname AS extra__writer FROM article AS A INNER JOIN `member` AS M ON A.memberId = M.id WHERE 1 AND A.boardId = ? ORDER BY A.id DESC LIMIT ?, ?
+2024-02-13 15:31:04 [DEBUG] c.e.d.r.A.getForPrintArticles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2024-02-13 15:31:04 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT A.*, M.nickname AS extra__writer
+FROM article AS A
+INNER JOIN `member` AS M
+ON A.memberId = M.id
+WHERE 1
+
+	AND A.boardId = 1
+
+ORDER BY A.id DESC
+
+	LIMIT 0, 10
+ {executed in 8 msec}
+2024-02-13 15:31:04 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|id |regdate             |updatedate          |memberid |boardid |title |body |hitcount |extra__writer |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|2  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목2   |내용2  |7        |회원1           |
+|1  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목1   |내용1  |5        |회원1           |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+
+2024-02-13 15:31:04 [DEBUG] c.e.d.r.A.getForPrintArticles - <==      Total: 2
+2024-02-13 15:31:04 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23ea5741]
+2024-02-13 15:31:04 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:31:04 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a3f431] was not registered for synchronization because synchronization is not active
+2024-02-13 15:31:04 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:31:04 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1851810305 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:31:04 [DEBUG] c.e.d.r.BoardRepository.getBoardById - ==>  Preparing: SELECT * FROM board WHERE id = ? AND delStatus = 0;
+2024-02-13 15:31:04 [DEBUG] c.e.d.r.BoardRepository.getBoardById - ==> Parameters: 1(Integer)
+2024-02-13 15:31:04 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT *
+	FROM board
+	WHERE id = 1
+	AND delStatus = 0;
+ {executed in 1 msec}
+2024-02-13 15:31:04 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|-------|-----|----------|--------|
+|id |regdate             |updatedate          |code   |name |delstatus |deldate |
+|---|--------------------|--------------------|-------|-----|----------|--------|
+|1  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |NOTICE |공지사항 |false     |null    |
+|---|--------------------|--------------------|-------|-----|----------|--------|
+
+2024-02-13 15:31:04 [DEBUG] c.e.d.r.BoardRepository.getBoardById - <==      Total: 1
+2024-02-13 15:31:04 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a3f431]
+2024-02-13 15:31:04 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:31:04 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f6b753e] was not registered for synchronization because synchronization is not active
+2024-02-13 15:31:04 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:31:04 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@428453222 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:31:04 [DEBUG] c.e.d.r.A.getArticlesCount - ==>  Preparing: SELECT COUNT(*) AS cnt FROM article AS A WHERE 1 AND boardId = ? ORDER BY id DESC
+2024-02-13 15:31:04 [DEBUG] c.e.d.r.A.getArticlesCount - ==> Parameters: 1(Integer)
+2024-02-13 15:31:04 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT COUNT(*) AS cnt
+FROM article AS A
+WHERE 1
+
+	AND boardId = 1
+
+ORDER BY id DESC
+ {executed in 0 msec}
+2024-02-13 15:31:04 [INFO ] jdbc.resultsettable - 
+|----|
+|cnt |
+|----|
+|2   |
+|----|
+
+2024-02-13 15:31:04 [DEBUG] c.e.d.r.A.getArticlesCount - <==      Total: 1
+2024-02-13 15:31:04 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f6b753e]
+2024-02-13 15:31:04 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:31:04 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9695097] was not registered for synchronization because synchronization is not active
+2024-02-13 15:31:04 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:31:04 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@644663446 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:31:04 [DEBUG] c.e.d.r.A.getForPrintArticles - ==>  Preparing: SELECT A.*, M.nickname AS extra__writer FROM article AS A INNER JOIN `member` AS M ON A.memberId = M.id WHERE 1 AND A.boardId = ? ORDER BY A.id DESC LIMIT ?, ?
+2024-02-13 15:31:04 [DEBUG] c.e.d.r.A.getForPrintArticles - ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2024-02-13 15:31:04 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT A.*, M.nickname AS extra__writer
+FROM article AS A
+INNER JOIN `member` AS M
+ON A.memberId = M.id
+WHERE 1
+
+	AND A.boardId = 1
+
+ORDER BY A.id DESC
+
+	LIMIT 0, 10
+ {executed in 6 msec}
+2024-02-13 15:31:04 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|id |regdate             |updatedate          |memberid |boardid |title |body |hitcount |extra__writer |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|2  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목2   |내용2  |7        |회원1           |
+|1  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목1   |내용1  |5        |회원1           |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+
+2024-02-13 15:31:04 [DEBUG] c.e.d.r.A.getForPrintArticles - <==      Total: 2
+2024-02-13 15:31:04 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9695097]
+2024-02-13 15:31:06 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:31:06 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@61411a96] was not registered for synchronization because synchronization is not active
+2024-02-13 15:31:06 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:31:06 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@859982938 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:31:06 [DEBUG] c.e.d.r.A.getForPrintArticle - ==>  Preparing: SELECT A.*, M.nickname AS extra__writer FROM article AS A INNER JOIN `member` AS M ON A.memberId = M.id WHERE A.id = ?
+2024-02-13 15:31:06 [DEBUG] c.e.d.r.A.getForPrintArticle - ==> Parameters: 2(Integer)
+2024-02-13 15:31:06 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT A.*, M.nickname AS extra__writer
+FROM article AS A
+INNER JOIN `member` AS M
+ON A.memberId = M.id
+WHERE A.id = 2
+ {executed in 1 msec}
+2024-02-13 15:31:06 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|id |regdate             |updatedate          |memberid |boardid |title |body |hitcount |extra__writer |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+|2  |2024-02-13 14:02:24 |2024-02-13 14:02:24 |2        |1       |제목2   |내용2  |7        |회원1           |
+|---|--------------------|--------------------|---------|--------|------|-----|---------|--------------|
+
+2024-02-13 15:31:06 [DEBUG] c.e.d.r.A.getForPrintArticle - <==      Total: 1
+2024-02-13 15:31:06 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@61411a96]
+2024-02-13 15:31:08 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:31:08 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fdaf955] was not registered for synchronization because synchronization is not active
+2024-02-13 15:31:08 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:31:08 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2075031537 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:31:08 [DEBUG] c.e.d.r.A.increaseHitCount - ==>  Preparing: UPDATE article SET hitCount = hitCount + 1 WHERE id = ?
+2024-02-13 15:31:08 [DEBUG] c.e.d.r.A.increaseHitCount - ==> Parameters: 2(Integer)
+2024-02-13 15:31:08 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. UPDATE article
+SET hitCount = hitCount + 1
+WHERE id = 2
+ {executed in 4 msec}
+2024-02-13 15:31:08 [DEBUG] c.e.d.r.A.increaseHitCount - <==    Updates: 1
+2024-02-13 15:31:08 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fdaf955]
+2024-02-13 15:31:08 [DEBUG] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2024-02-13 15:31:08 [DEBUG] org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20e00b7a] was not registered for synchronization because synchronization is not active
+2024-02-13 15:31:08 [DEBUG] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2024-02-13 15:31:08 [DEBUG] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@679080296 wrapping net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288] will not be managed by Spring
+2024-02-13 15:31:08 [DEBUG] c.e.d.r.A.getArticleHitCount - ==>  Preparing: SELECT hitCount FROM article WHERE id = ?
+2024-02-13 15:31:08 [DEBUG] c.e.d.r.A.getArticleHitCount - ==> Parameters: 2(Integer)
+2024-02-13 15:31:08 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+41. SELECT hitCount
+FROM article
+WHERE id = 2
+ {executed in 0 msec}
+2024-02-13 15:31:08 [INFO ] jdbc.resultsettable - 
+|---------|
+|hitcount |
+|---------|
+|8        |
+|---------|
+
+2024-02-13 15:31:08 [DEBUG] c.e.d.r.A.getArticleHitCount - <==      Total: 1
+2024-02-13 15:31:08 [DEBUG] org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20e00b7a]
+2024-02-13 15:31:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:31:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:31:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:31:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:32:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:32:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:32:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:32:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:33:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:33:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:33:26 [DEBUG] com.zaxxer.hikari.pool.PoolBase - HikariPool-5 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@26289dca: (connection has passed maxLifetime)
+2024-02-13 15:33:26 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@4e38c
+2024-02-13 15:33:32 [DEBUG] com.zaxxer.hikari.pool.PoolBase - HikariPool-5 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@70efcab9: (connection has passed maxLifetime)
+2024-02-13 15:33:32 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@7f497a2
+2024-02-13 15:33:34 [DEBUG] com.zaxxer.hikari.pool.PoolBase - HikariPool-5 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5ff61288: (connection has passed maxLifetime)
+2024-02-13 15:33:34 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@46c99d99
+2024-02-13 15:33:35 [DEBUG] com.zaxxer.hikari.pool.PoolBase - HikariPool-5 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@1fe18908: (connection has passed maxLifetime)
+2024-02-13 15:33:35 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@77c57dcc
+2024-02-13 15:33:40 [DEBUG] com.zaxxer.hikari.pool.PoolBase - HikariPool-5 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@7f0e2ad1: (connection has passed maxLifetime)
+2024-02-13 15:33:40 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@4bc2d233
+2024-02-13 15:33:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:33:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:33:42 [DEBUG] com.zaxxer.hikari.pool.PoolBase - HikariPool-5 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@2e748c68: (connection has passed maxLifetime)
+2024-02-13 15:33:42 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@affd808
+2024-02-13 15:33:48 [DEBUG] com.zaxxer.hikari.pool.PoolBase - HikariPool-5 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@1f21d59e: (connection has passed maxLifetime)
+2024-02-13 15:33:48 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@4442ab9c
+2024-02-13 15:33:52 [DEBUG] com.zaxxer.hikari.pool.PoolBase - HikariPool-5 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@30a68850: (connection has passed maxLifetime)
+2024-02-13 15:33:52 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@57fa1a7
+2024-02-13 15:33:54 [DEBUG] com.zaxxer.hikari.pool.PoolBase - HikariPool-5 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5e1cdfa5: (connection has passed maxLifetime)
+2024-02-13 15:33:54 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@34b02470
+2024-02-13 15:33:59 [DEBUG] com.zaxxer.hikari.pool.PoolBase - HikariPool-5 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@2601056d: (connection has passed maxLifetime)
+2024-02-13 15:33:59 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@3afe2172
+2024-02-13 15:34:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:34:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:34:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:34:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:35:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:35:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:35:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:35:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:36:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:36:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:36:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:36:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:37:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:37:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:37:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:37:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:38:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:38:11 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:38:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:38:41 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-02-13 15:38:51 [INFO ] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-02-13 15:38:51 [DEBUG] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Change set: [C:\work\sts-4.20.0.RELEASE-workspace\demo\target\classes [C:\work\sts-4.20.0.RELEASE-workspace\demo\target\classes\com\example\demo\controller\UsrArticleController.class (MODIFY), C:\work\sts-4.20.0.RELEASE-workspace\demo\target\classes\com\example\demo\vo\ResultData.class (MODIFY)]]
+2024-02-13 15:38:51 [DEBUG] o.s.boot.devtools.restart.Restarter - Restarting application
+2024-02-13 15:38:51 [DEBUG] o.s.boot.devtools.restart.Restarter - Stopping application
+2024-02-13 15:38:51 [DEBUG] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2024-02-13 15:38:51 [DEBUG] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ac20387, started on Tue Feb 13 14:48:15 KST 2024
+2024-02-13 15:38:51 [DEBUG] o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147482623
+2024-02-13 15:38:51 [DEBUG] o.s.c.s.DefaultLifecycleProcessor - Bean 'webServerGracefulShutdown' completed its stop procedure
+2024-02-13 15:38:51 [DEBUG] o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147481599
+2024-02-13 15:38:51 [INFO ] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-02-13 15:38:51 [INFO ] o.a.c.c.C.[Tomcat-1].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-02-13 15:38:51 [WARN ] o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-5 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.8.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.8.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.8.1/java.lang.Thread.run(Thread.java:833)
+2024-02-13 15:38:51 [DEBUG] o.s.c.s.DefaultLifecycleProcessor - Bean 'webServerStartStop' completed its stop procedure
+2024-02-13 15:38:51 [DEBUG] o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase -2147483647
+2024-02-13 15:38:51 [DEBUG] o.s.c.s.DefaultLifecycleProcessor - Bean 'springBootLoggingLifecycle' completed its stop procedure
+2024-02-13 15:38:51 [DEBUG] o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2024-02-13 15:38:51 [DEBUG] o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2024-02-13 15:38:51 [DEBUG] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-02-13 15:38:51 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2024-02-13 15:38:51 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2024-02-13 15:38:51 [DEBUG] com.zaxxer.hikari.pool.PoolBase - HikariPool-5 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@4e38c: (connection evicted)
+2024-02-13 15:38:51 [DEBUG] com.zaxxer.hikari.pool.PoolBase - HikariPool-5 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@7f497a2: (connection evicted)
+2024-02-13 15:38:51 [DEBUG] com.zaxxer.hikari.pool.PoolBase - HikariPool-5 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@46c99d99: (connection evicted)
+2024-02-13 15:38:51 [DEBUG] com.zaxxer.hikari.pool.PoolBase - HikariPool-5 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@77c57dcc: (connection evicted)
+2024-02-13 15:38:51 [DEBUG] com.zaxxer.hikari.pool.PoolBase - HikariPool-5 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@4bc2d233: (connection evicted)
+2024-02-13 15:38:51 [DEBUG] com.zaxxer.hikari.pool.PoolBase - HikariPool-5 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@affd808: (connection evicted)
+2024-02-13 15:38:51 [DEBUG] com.zaxxer.hikari.pool.PoolBase - HikariPool-5 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@4442ab9c: (connection evicted)
+2024-02-13 15:38:51 [DEBUG] com.zaxxer.hikari.pool.PoolBase - HikariPool-5 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@57fa1a7: (connection evicted)
+2024-02-13 15:38:51 [DEBUG] com.zaxxer.hikari.pool.PoolBase - HikariPool-5 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@34b02470: (connection evicted)
+2024-02-13 15:38:51 [DEBUG] com.zaxxer.hikari.pool.PoolBase - HikariPool-5 - Closing connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@3afe2172: (connection evicted)
+2024-02-13 15:38:51 [DEBUG] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2024-02-13 15:38:51 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2024-02-13 15:38:51 [DEBUG] o.s.boot.devtools.restart.Restarter - Starting application com.example.demo.DemoApplication with URLs [file:/C:/work/sts-4.20.0.RELEASE-workspace/demo/target/classes/]
