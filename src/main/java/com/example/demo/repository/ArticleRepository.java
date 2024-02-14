@@ -154,4 +154,18 @@ public interface ArticleRepository {
 	public List<Article> getForPrintArticles(int boardId, int limitFrom, int limitTake, String searchKeywordTypeCode,
 			String searchKeyword);
 
+	@Update("""
+			UPDATE article
+			SET LikeCount = LikeCount + 1
+			WHERE id = #{id}
+			""")
+	public int increaseLikeCount(int id);
+
+	@Select("""
+			SELECT LikeCount
+			FROM article
+			WHERE id = #{id}
+			""")
+	public int getArticleLikeCount(int id);
+
 }
