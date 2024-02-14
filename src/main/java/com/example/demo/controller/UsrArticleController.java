@@ -191,22 +191,4 @@ public class UsrArticleController {
 				"../article/list");
 	}
 
-	@RequestMapping("/usr/article/doIncreaseLikeCountRd")
-	@ResponseBody
-	public ResultData doIncreaseLikeCountRd(int id) {
-
-		ResultData increaseLikeCountRd = articleService.increaseLikeCount(id);
-
-		if (increaseLikeCountRd.isFail()) {
-			return increaseLikeCountRd;
-		}
-
-		ResultData rd = ResultData.newData(increaseLikeCountRd, "LikeCount", articleService.getArticleLikeCount(id));
-
-		rd.setData2("id", id);
-
-		return rd;
-
-	}
-
 }

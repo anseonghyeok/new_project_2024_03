@@ -202,6 +202,24 @@ relTypeCode = 'article',
 relId = 1,
 `point` = 1;
 
+# article 테이블에 좋아요 관련 컬럼 추가
+ALTER TABLE article ADD COLUMN goodReactionPoint INT(10) UNSIGNED NOT NULL DEFAULT 0;
+ALTER TABLE article ADD COLUMN badReactionPoint INT(10) UNSIGNED NOT NULL DEFAULT 0;
+
+# update join -> 기존 게시물의 good,bad RP 값을 RP 테이블에서 가져온 데이터로 채운다
+UPDATE article AS A
+INNER JOIN (
+    SELECT RP.relTypeCode,RP.relId,
+    SUM(IF(RP.point > 0, RP.point, 0)) AS goodReactionPoint,
+    SUM(IF(RP.point < 0, RP.point * -1, 0)) AS badReactionPoint
+    FROM reactionPoint AS RP
+    GROUP BY RP.relTypeCode, RP.relId
+) AS RP_SUM
+ON A.id = RP_SUM.relId
+SET A.goodReactionPoint = RP_SUM.goodReactionPoint,
+A.badReactionPoint = RP_SUM.badReactionPoint;
+
+
 ###############################################
 
 SELECT * FROM article;
@@ -257,12 +275,9 @@ ORDER BY id DESC
 SELECT COUNT(*)
 FROM article AS A
 WHERE 1
-
-	AND boardId = 1
-
-			AND A.title LIKE CONCAT('%','0000','%')
-			OR A.body LIKE CONCAT('%','0000','%')
-
+AND boardId = 1
+AND A.title LIKE CONCAT('%','0000','%')
+OR A.body LIKE CONCAT('%','0000','%')
 ORDER BY id DESC
 
 
@@ -318,3 +333,19 @@ LEFT JOIN reactionPoint AS RP
 ON A.id = RP.relId AND RP.relTypeCode = 'article'
 GROUP BY A.id
 ORDER BY A.id DESC;
+
+
+SELECT *, COUNT(*)
+FROM reactionPoint AS RP
+GROUP BY RP.relTypeCode,RP.relId
+
+SELECT IF(RP.point > 0, '큼','작음')
+FROM reactionPoint AS RP
+GROUP BY RP.relTypeCode,RP.relId
+
+# 각 게시물의 좋아요, 싫어요 갯수
+SELECT RP.relTypeCode, RP.relId,
+SUM(IF(RP.point > 0,RP.point,0)) AS goodReactionPoint,
+SUM(IF(RP.point < 0,RP.point * -1,0)) AS badReactionPoint
+FROM reactionPoint AS RP
+GROUP BY RP.relTypeCode,RP.relId
