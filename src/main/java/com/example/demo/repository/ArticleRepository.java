@@ -168,4 +168,27 @@ public interface ArticleRepository {
 	public List<Article> getForPrintArticles(int boardId, int limitFrom, int limitTake, String searchKeywordTypeCode,
 			String searchKeyword);
 
+	@Select("""
+			SELECT goodReactionPoint,badReactionPoint
+			FROM article
+			WHERE id = #{id}
+			""")
+	public Object getArticleCount(int id);
+
+	@Update("""
+			UPDATE reactionPoint
+			SET point = point + 1
+			meberId=#{meberId}
+			WHERE relId = #{id}
+			""")
+	public int increaseCount(int id, int meberId);
+
+	@Update("""
+			UPDATE reactionPoint
+			SET point = point - 1
+			meberId=#{meberId}
+			WHERE relId = #{id}
+			""")
+	public int decreaseCount(int id, int meberId);
+
 }

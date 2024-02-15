@@ -118,4 +118,31 @@ public class ArticleService {
 				searchKeyword);
 	}
 
+	public ResultData increaseCount(int id,int meberId) {
+		int affectedRow = articleRepository.increaseCount(id, meberId);
+
+		if (affectedRow == 0) {
+			return ResultData.from("F-1", "해당 게시물 없음", "id", id);
+		}
+
+		return ResultData.from("S-1", "해당 게시물 조회수 증가", "id", id);
+
+	}
+	public ResultData decreaseCount(int id,int meberId) {
+		int affectedRow = articleRepository.decreaseCount(id, meberId);
+
+		if (affectedRow == 0) {
+			return ResultData.from("F-1", "해당 게시물 없음", "id", id);
+		}
+		
+		return ResultData.from("S-1", "해당 게시물 조회수 감소", "id", id);
+		
+	}
+
+	public Object getArticleCount(int id) {
+		return articleRepository.getArticleCount(id);
+
+	
+	}
+
 }
