@@ -35,15 +35,10 @@ public interface ArticleRepository {
 
 	@Select("""
 			<script>
-				SELECT A.*, M.nickname AS extra__writer,
-				IFNULL(SUM(RP.point),0) AS extra__sumReactionPoint,
-				IFNULL(SUM(IF(RP.point &gt; 0, RP.point, 0)),0) AS extra__goodReactionPoint,
-				IFNULL(SUM(IF(RP.point &lt; 0, RP.point, 0)),0) AS extra__badReactionPoint
+				SELECT A.*, M.nickname AS extra__writer
 				FROM article AS A
 				INNER JOIN `member` AS M
 				ON A.memberId = M.id
-				LEFT JOIN reactionPoint AS RP
-				ON A.id = RP.relId AND RP.relTypeCode = 'article'
 				WHERE A.id = #{id}
 				GROUP BY A.id
 			</script>
@@ -132,14 +127,10 @@ public interface ArticleRepository {
 	@Select("""
 			<script>
 			SELECT A.*,
-			IFNULL(SUM(RP.point),0) AS extra__sumReactionPoint,
-			IFNULL(SUM(IF(RP.point &gt; 0, RP.point, 0)),0) AS extra__goodReactionPoint,
-			IFNULL(SUM(IF(RP.point &lt; 0, RP.point, 0)),0) AS extra__badReactionPoint, M.nickname AS extra__writer
+			M.nickname AS extra__writer
 			FROM article AS A
 			INNER JOIN `member` AS M
 			ON A.memberId = M.id
-			LEFT JOIN reactionPoint AS RP
-			ON A.id = RP.relId AND RP.relTypeCode = 'article'
 			WHERE 1
 			<if test="boardId != 0">
 				AND A.boardId = #{boardId}
@@ -168,27 +159,32 @@ public interface ArticleRepository {
 	public List<Article> getForPrintArticles(int boardId, int limitFrom, int limitTake, String searchKeywordTypeCode,
 			String searchKeyword);
 
-	@Select("""
-			SELECT goodReactionPoint,badReactionPoint
-			FROM article
-			WHERE id = #{id}
+	@Update("""
+			UPDATE article
+			SET goodReactionPoint = goodReactionPoint + 1
+			WHERE id = #{relId}
 			""")
-	public Object getArticleCount(int id);
+	public int increaseGoodReactionPoint(int relId);
 
 	@Update("""
-			UPDATE reactionPoint
-			SET point = point + 1
-			meberId=#{meberId}
-			WHERE relId = #{id}
+			UPDATE article
+			SET goodReactionPoint = goodReactionPoint - 1
+			WHERE id = #{relId}
 			""")
-	public int increaseCount(int id, int meberId);
+	public int decreaseGoodReactionPoint(int relId);
 
 	@Update("""
-			UPDATE reactionPoint
-			SET point = point - 1
-			meberId=#{meberId}
-			WHERE relId = #{id}
+			UPDATE article
+			SET badReactionPoint = badReactionPoint + 1
+			WHERE id = #{relId}
 			""")
-	public int decreaseCount(int id, int meberId);
+	public int increaseBadReactionPoint(int relId);
+
+	@Update("""
+			UPDATE article
+			SET badReactionPoint = badReactionPoint - 1
+			WHERE id = #{relId}
+			""")
+	public int decreaseBadReactionPoint(int relId);
 
 }
