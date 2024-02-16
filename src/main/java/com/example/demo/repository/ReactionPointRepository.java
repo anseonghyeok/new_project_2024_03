@@ -46,5 +46,7 @@ public interface ReactionPointRepository {
 			AND relId = #{relId}
 			""")
 	public void deleteReactionPoint(int memberId, String relTypeCode, int relId);
+	
+	
 
 }
