@@ -58,4 +58,46 @@ public class UsrReplyController {
 
 	}
 
+	@RequestMapping("/usr/reply/doDelete")
+	@ResponseBody
+	public String doDelete(HttpServletRequest req, int id) {
+		Rq rq = (Rq) req.getAttribute("rq");
+
+		Reply reply = replyService.getForPrintReplie(id);
+
+		if (reply == null) {
+			return Ut.jsHistoryBack("F-1", Ut.f("%d번 글은 존재하지 않습니다", id));
+		}
+
+		ResultData loginedMemberCanDeleteRd = replyService.userCanDelete(rq.getLoginedMemberId(), reply);
+
+		if (loginedMemberCanDeleteRd.isSuccess()) {
+			replyService.deleteReply(id);
+		}
+
+		return Ut.jsHistoryBack(loginedMemberCanDeleteRd.getResultCode(), loginedMemberCanDeleteRd.getMsg());
+	}
+
+	
+	
+	@RequestMapping("/usr/reply/doModify")
+	@ResponseBody
+	public String doModify(HttpServletRequest req, int id, String title, String body) {
+		Rq rq = (Rq) req.getAttribute("rq");
+
+		Reply reply = replyService.getForPrintReplie(id);
+
+		if (reply == null) {
+			return Ut.jsHistoryBack("F-1", Ut.f("%d번 글은 존재하지 않습니다", id));
+		}
+
+		ResultData loginedMemberCanModifyRd = replyService.userCanModify(rq.getLoginedMemberId(), reply);
+
+		if (loginedMemberCanModifyRd.isSuccess()) {
+			replyService.modifyReply(id,body);
+		}
+
+		return Ut.jsReplace(loginedMemberCanModifyRd.getResultCode(), loginedMemberCanModifyRd.getMsg(),
+				"../article/detail?id=" + id);
+	}
 }

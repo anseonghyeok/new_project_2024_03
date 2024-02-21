@@ -89,6 +89,7 @@ public class UsrArticleController {
 		Rq rq = (Rq) req.getAttribute("rq");
 
 		Article article = articleService.getForPrintArticle(rq.getLoginedMemberId(), id);
+		Reply replyCheck = replyService.getForPrintReply(rq.getLoginedMemberId(), id);
 		ResultData usersReactionRd = reactionPointService.usersReaction(rq.getLoginedMemberId(), "article", id);
 
 		if (usersReactionRd.isSuccess()) {
@@ -97,12 +98,11 @@ public class UsrArticleController {
 
 		List<Reply> replies = replyService.getForPrintReplies(rq.getLoginedMemberId(), "article", id);
 
-		
-		
 		int repliesCount = replies.size();
 
 		model.addAttribute("article", article);
 		model.addAttribute("replies", replies);
+		model.addAttribute("replyCheck", replyCheck);
 		model.addAttribute("repliesCount", repliesCount);
 		model.addAttribute("isAlreadyAddGoodRp",
 				reactionPointService.isAlreadyAddGoodRp(rq.getLoginedMemberId(), id, "article"));
