@@ -20,6 +20,9 @@
 	
 </script>
 
+
+
+
 <!-- 조회수 -->
 <script>
 	function ArticleDetail__doIncreaseHitCount() {
@@ -322,7 +325,9 @@
 									href="../reply/doDelete?id=${reply.id }">삭제</a>
 							</c:if></td>
 
-
+			
+			
+			
 
 
 

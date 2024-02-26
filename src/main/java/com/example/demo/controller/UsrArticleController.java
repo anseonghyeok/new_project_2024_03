@@ -131,7 +131,7 @@ public class UsrArticleController {
 	}
 
 	@RequestMapping("/usr/article/write")
-	public String showJoin(HttpServletRequest req) {
+	public String showWrite(HttpServletRequest req) {
 
 		return "usr/article/write";
 	}
