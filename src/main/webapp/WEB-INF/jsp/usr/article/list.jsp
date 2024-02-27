@@ -3,13 +3,6 @@
 <c:set var="pageTitle" value="#{board.code } ARTICLE LIST"></c:set>
 <%@ include file="../common/head.jspf"%>
 
-<style>
-body, ul, li, h1 {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-</style>
 
 <section class="mt-8 text-xl px-4">
 	<div class="mx-auto overflow-x-auto">
@@ -17,13 +10,14 @@ body, ul, li, h1 {
 			<div class="badge badge-outline">${articlesCount }개</div>
 			<div class="flex-grow"></div>
 			<form action="">
-				<input type="hidden" name="boardId" value="${param.boardId }" /> <select
-					data-value="${param.searchKeywordTypeCode }" class="select select-bordered select-sm w-full max-w-xs"
+				<input type="hidden" name="boardId" value="${param.boardId }" />
+				<select data-value="${param.searchKeywordTypeCode }" class="select select-bordered select-sm w-full max-w-xs"
 					name="searchKeywordTypeCode">
 					<option value="title">title</option>
 					<option value="body">body</option>
 					<option value="title,body">title+body</option>
-				</select> <input value="${param.searchKeyword }" name="searchKeyword" type="text" placeholder="searchKeyword?"
+				</select>
+				<input value="${param.searchKeyword }" name="searchKeyword" type="text" placeholder="searchKeyword?"
 					class="input-sm input input-bordered w-48 max-w-xs" />
 				<button class="btn btn-ghost btn-sm" type="submit">검색</button>
 			</form>
@@ -54,11 +48,13 @@ body, ul, li, h1 {
 
 					<td>${article.id }</td>
 					<td>${article.regDate.substring(0,10) }</td>
-					<td><a href="detail?id=${article.id }">${article.title }
+					<td>
+						<a href="detail?id=${article.id }">${article.title }
 							<c:if test="${article.extra__repliesCnt > 0 }">
 								<span style="color: red;">[${article.extra__repliesCnt }]</span>
 							</c:if>
-						</a></td>
+						</a>
+					</td>
 					<td>${article.extra__writer }</td>
 					<td>${article.hitCount }</td>
 					<td>${article.goodReactionPoint }</td>
@@ -105,12 +101,6 @@ body, ul, li, h1 {
 	</div>
 </section>
 
-<div class="h-20 flex text-3xl justify-end mr-40">
-	<c:if test="${rq.isLogined() }">
-		<li><a class="hover:underline" href="../article/write">Writing</a></li>
-	</c:if>
-</div>
 
 
-S
 <%@ include file="../common/foot.jspf"%>

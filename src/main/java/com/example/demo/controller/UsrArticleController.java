@@ -89,7 +89,6 @@ public class UsrArticleController {
 		Rq rq = (Rq) req.getAttribute("rq");
 
 		Article article = articleService.getForPrintArticle(rq.getLoginedMemberId(), id);
-		Reply replyCheck = replyService.getForPrintReply(rq.getLoginedMemberId(), id);
 		ResultData usersReactionRd = reactionPointService.usersReaction(rq.getLoginedMemberId(), "article", id);
 
 		if (usersReactionRd.isSuccess()) {
@@ -102,7 +101,6 @@ public class UsrArticleController {
 
 		model.addAttribute("article", article);
 		model.addAttribute("replies", replies);
-		model.addAttribute("replyCheck", replyCheck);
 		model.addAttribute("repliesCount", repliesCount);
 		model.addAttribute("isAlreadyAddGoodRp",
 				reactionPointService.isAlreadyAddGoodRp(rq.getLoginedMemberId(), id, "article"));
@@ -131,7 +129,7 @@ public class UsrArticleController {
 	}
 
 	@RequestMapping("/usr/article/write")
-	public String showWrite(HttpServletRequest req) {
+	public String showJoin(HttpServletRequest req) {
 
 		return "usr/article/write";
 	}
