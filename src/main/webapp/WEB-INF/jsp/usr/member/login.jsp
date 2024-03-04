@@ -5,40 +5,43 @@
 
 
 <section class="mt-8 text-xl px-4">
-	<div class="mx-auto">
-		<form action="../member/doLogin" method="POST">
-			<input type="hidden" name="afterLoginUri" value="${param.afterLoginUri }" />
-			<table class="login-box table-box-1" border="1">
-				<tbody>
-					<tr>
-						<th>아이디</th>
-						<td>
-							<input class="input input-bordered input-primary w-full max-w-xs" autocomplete="off" type="text"
-								placeholder="아이디를 입력해주세요" name="loginId" />
-						</td>
-					</tr>
-					<tr>
-						<th>비밀번호</th>
-						<td>
-							<input class="input input-bordered input-primary w-full max-w-xs" autocomplete="off" type="text"
-								placeholder="비밀번호를 입력해주세요" name="loginPw" />
-						</td>
-					</tr>
-					<tr>
-						<th></th>
-						<td>
-							<input class="btn btn-outline btn-info" type="submit" value="로그인" />
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</form>
-		<div class="btns">
-			<button class="btn btn-outline" type="button" onclick="history.back();">뒤로가기</button>
-		</div>
-	</div>
+    <div class="mx-auto">
+        <form action="../member/doLogin" method="POST">
+            <input type="hidden" name="afterLoginUri" value="${param.afterLoginUri }" />
+            <table class="login-box table-box-1" border="1">
+                <tbody>
+                    <tr>
+                        <th>아이디</th>
+                        <td>
+                            <input class="input input-bordered input-primary w-full max-w-xs" autocomplete="off" type="text"
+                                placeholder="아이디를 입력해주세요" name="loginId" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>비밀번호</th>
+                        <td>
+                            <input class="input input-bordered input-primary w-full max-w-xs" autocomplete="off" type="text"
+                                placeholder="비밀번호를 입력해주세요" name="loginPw" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td>
+                            <input class="btn btn-outline btn-info" type="submit" value="로그인" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <!-- 회원가입 칸 추가 -->
+        <div class="text-center mt-4">
+            <p>아직 회원이 아니신가요? <a href="../member/join" class="text-blue-500">회원가입</a></p>
+        </div>
+        <!-- 뒤로가기 버튼 추가 -->
+        <div class="btns mt-4">
+            <button class="btn btn-outline" type="button" onclick="history.back();">뒤로가기</button>
+        </div>
+    </div>
 </section>
-
-
 
 <%@ include file="../common/foot.jspf"%>

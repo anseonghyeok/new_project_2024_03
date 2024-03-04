@@ -19,9 +19,10 @@ public interface ArticleRepository {
 			regDate = NOW(),
 			updateDate = NOW(),
 			memberId = #{memberId},
+			boardId = #{boardId},
 			title = #{title}, `body` = #{body}
 			""")
-	public void writeArticle(int memberId, String title, String body);
+	public void writeArticle(int memberId, String title, String body, int boardId);
 
 	@Select("SELECT LAST_INSERT_ID()")
 	public int getLastInsertId();
@@ -49,6 +50,7 @@ public interface ArticleRepository {
 	public void deleteArticle(int id);
 
 	@Update("""
+			<script>
 			UPDATE article
 				<set>
 					<if test="title != null and title != ''">title = #{title},</if>
@@ -56,6 +58,7 @@ public interface ArticleRepository {
 					updateDate = NOW()
 				</set>
 			WHERE id = #{id}
+			</script>
 				""")
 	public void modifyArticle(int id, String title, String body);
 
