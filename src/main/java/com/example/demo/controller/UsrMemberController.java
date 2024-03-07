@@ -131,8 +131,19 @@ public class UsrMemberController {
 	}
 
 	@RequestMapping("/usr/member/myPage")
-	public String showMyPage() {
+	public String showMyPage(HttpServletRequest req) {
 
+		Rq rq = (Rq) req.getAttribute("rq");
+
+		if (!rq.isLogined()) {
+			return 	"usr/test/login";
+		}
+		
+		
+	
+		
+		
+		
 		return "usr/member/myPage";
 	}
 
@@ -140,6 +151,12 @@ public class UsrMemberController {
 	public String showCheckPw() {
 
 		return "usr/member/checkPw";
+	}
+	
+	@RequestMapping("/usr/member/exit")
+	public String showmemberExit() {
+
+		return "usr/member/exit";
 	}
 
 	@RequestMapping("/usr/member/doCheckPw")

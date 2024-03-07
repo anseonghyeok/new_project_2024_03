@@ -4,8 +4,26 @@
 <%@ include file="../common/head.jspf"%>
 
 
-<!-- <div class="bg-cover bg-no-repeat bg-center w-full h-80" style="background-image: url('/resource/image1.png');">
-  내용을 추가하거나 중첩할 수 있습니다
-</div>
- -->
+
+  <div class="bg-cover bg-no-repeat bg-center w-full h-80" style="background-image: url('/resource/image1.png');"></div>
+<!-- <script>
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            alert("Geolocation is not supported by this browser.");
+        }
+    }
+
+    function showPosition(pos) {
+        console.log(pos);
+        var latitude = pos.coords.latitude;
+        var longitude = pos.coords.longitude;
+        alert("현재 위치는 : " + latitude + ", "+ longitude);
+    }
+
+    // 페이지가 로드될 때 위치 정보를 가져옴
+    window.onload = getLocation;
+</script> -->
+ 
 <%@ include file="../common/foot.jspf"%>

@@ -28,9 +28,31 @@
     </a>
 </div>
 
- <a href="#">
-        <img src="/resource/search.png" class="max-w-full h-auto" alt="search">
+ 
+
+<div class="flex w-50 justify-center items-center">
+    <!-- Search Bar with Icon -->
+    <div class="relative " >
+        <input type="text" placeholder="검색..." class="border rounded-md px-2 py-1 ml-0 mt-0 mr-2 ">
+        <a href="#" class="absolute top-0 right-0 mt-1 mr-1">
+            <img src="/resource/search.png" class="w-3/4 h-auto" alt="search">
+        </a>
+    </div>
+    </div>
+    
+    
+ 
+    <div class="flex items-center" >    <!--  space-x-6 -->
+    
+    
+    <a href="../member/myPage" style="margin-left: 1050px;" > 
+        <img src="/resource/mypage.png" class="max-w-full h-auto" alt="mypage">
     </a>
+    <a href="#" style="margin-left: 50px; " > 
+        <img src="/resource/shooping.png" class="max-w-full h-auto" alt="shopping">
+    </a>
+
+</div>
 
 <div class="relative ">
     <ul class="flex">
@@ -38,7 +60,8 @@
             <a class="hover:underline" href="#">
                 <img src="/resource/category.png" class="w-1/2" alt="category">
             </a>
-            <ul class="absolute hidden bg-white shadow-md py-2" style="white-space: nowrap;" >
+<!--             class="w-1/2"
+ -->            <ul class="absolute hidden bg-white shadow-md py-2" style="white-space: nowrap;" >
                 <li><a class="hover:underline" href="../article/list?boardId=1&page=1">한식</a></li>
                 <li><a class="hover:underline" href="../article/list?boardId=2&page=1">중식</a></li>
                 <li><a class="hover:underline" href="../article/list?boardId=3&page=1">일식</a></li>
@@ -51,22 +74,23 @@
     </ul>
 </div>
 
-<div class="absolute top-28 right-4 space-x-4">
-    <c:if test="${!rq.isLogined() }">
-        <a class="hover:underline" href="../member/login">로그인</a>
-        <a class="hover:underline" href="../member/join">회원가입</a>
-        <a class="hover:underline" href="#">고객센터</a>
-    </c:if>
-    <a href="#" style="top: 10px;  " class="relative"> 
-        <img src="/resource/mypage.png" class="max-w-full h-auto" alt="mypage">
-    </a>
+<div class="absolute top-36 right-4 space-x-4 flex items-center">
+    <ul class="flex">
+        <c:if test="${!rq.isLogined() }">
+            <li><a class="hover:underline" href="../test/login">로그인</a></li> 
+            <li><a class="hover:underline" href="../test/join">회원가입</a></li>
+            <li><a class="hover:underline" href="#">고객센터</a></li>
+        </c:if>
+        
+        <c:if test="${rq.isLogined() }">
+            <li><a class="hover:underline" href="../article/write">글쓰기</a></li>
+            <li><a class="hover:underline" href="/usr/member/myPage">마이페이지</a></li>
+            <li><a onclick="if(confirm('로그아웃 할래?') == false) return false;" class="hover:underline" href="../member/doLogout">로그아웃</a></li>
+        </c:if>
+   
+ 
 </div>
 
-<div class="absolute top-32 right-24"> 
-    <a href="#" style="top: 16px;   " class="relative"> 
-        <img src="/resource/shooping.png" class="max-w-full h-auto" alt="shopping">
-    </a>
-</div>
 
 
 

@@ -35,7 +35,7 @@
         </form>
         <!-- 회원가입 칸 추가 -->
         <div class="text-center mt-4">
-            <p>아직 회원이 아니신가요? <a href="../member/join" class="text-blue-500">회원가입</a></p>
+            <p>아직 회원이 아니신가요? <a href="../test/join" class="text-blue-500">회원가입</a></p>
         </div>
         <!-- 뒤로가기 버튼 추가 -->
         <div class="btns mt-4">
