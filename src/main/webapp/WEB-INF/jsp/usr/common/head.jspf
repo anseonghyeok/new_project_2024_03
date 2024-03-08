@@ -42,18 +42,7 @@
     
     
  
-    <div class="flex items-center" >    <!--  space-x-6 -->
-    
-    
-    <a href="../member/myPage" style="margin-left: 1050px;" > 
-        <img src="/resource/mypage.png" class="max-w-full h-auto" alt="mypage">
-    </a>
-    <a href="#" style="margin-left: 50px; " > 
-        <img src="/resource/shooping.png" class="max-w-full h-auto" alt="shopping">
-    </a>
-
-</div>
-
+  
 <div class="relative ">
     <ul class="flex">
         <li class="relative -top-8">
@@ -74,25 +63,28 @@
     </ul>
 </div>
 
-<div class="absolute top-36 right-4 space-x-4 flex items-center">
-    <ul class="flex">
-        <c:if test="${!rq.isLogined() }">
-            <li><a class="hover:underline" href="../test/login">로그인</a></li> 
-            <li><a class="hover:underline" href="../test/join">회원가입</a></li>
-            <li><a class="hover:underline" href="#">고객센터</a></li>
-        </c:if>
-        
-        <c:if test="${rq.isLogined() }">
-            <li><a class="hover:underline" href="../article/write">글쓰기</a></li>
-            <li><a class="hover:underline" href="/usr/member/myPage">마이페이지</a></li>
-            <li><a onclick="if(confirm('로그아웃 할래?') == false) return false;" class="hover:underline" href="../member/doLogout">로그아웃</a></li>
-        </c:if>
-   
- 
+<div class="absolute top-36 right-4 space-x-4 flex flex-col items-end">
+    <ul class="flex mb-4">
+      <c:if test="${!rq.isLogined() }">
+        <li><a class="hover:underline" href="../test/login">로그인</a></li>
+        <li><a class="hover:underline" href="../test/join">회원가입</a></li>
+        <li><a class="hover:underline" href="#">고객센터</a></li>
+      </c:if>
+      <c:if test="${rq.isLogined() }">
+        <li><a class="hover:underline" href="../article/write">글쓰기</a></li>
+        <li><a class="hover:underline" href="/usr/member/myPage">마이페이지</a></li>
+        <li><a onclick="if(confirm('로그아웃 할래?') == false) return false;" class="hover:underline" href="../member/doLogout">로그아웃</a></li>
+      </c:if>
+    </ul>
+     <div class="flex items-center">
+    <a href="../member/myPage" class="mr-20 ml-16">
+      <img src="/resource/mypage.png" class="max-w-full h-auto" alt="mypage">
+    </a>
+    <a href="#" class="mr-12 ml-8">
+      <img src="/resource/shooping.png" class="max-w-full h-auto" alt="shopping">
+    </a>
+  </div>
 </div>
-
-
-
 
 
 <%--    <div class="absolute top-4 right-4 flex space-x-4">
