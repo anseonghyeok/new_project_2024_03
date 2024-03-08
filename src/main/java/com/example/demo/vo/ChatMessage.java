@@ -1,6 +1,7 @@
 package com.example.demo.vo;
 
 
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,8 +10,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ChatMessage {
-    private String from;
-    private String text;
-
-    // Constructors, getters, and setters
+    private String sender;
+    private String content;
+    
+    // 생성자, Getter, Setter 생략
 }
